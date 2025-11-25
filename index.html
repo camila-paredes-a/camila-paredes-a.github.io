@@ -14,24 +14,69 @@
 </head>
 
 <body>
-  <h1>Camila Paredes</h1>
-  <h2>PP434</h2>
-  <p>This is my website project for Automated Data Visualisation.</p>
 
+  <!-- Top navigation bar -->
+  <header class="top-nav">
+    <div class="nav-left">
+      <h1 class="site-name">Camila Paredes</h1>h1>
+    </div>
+
+    <div class="nav-center">
+      <h2 class="page-title">Data Visualisation Portfolio</h2>
+    </div>
+
+    <div class="nav-right">
+      <!-- Future navigation links -->
+      <!-- <a href="#">Project</a> -->
+      <!-- <a href="#">LinkedIn</a> -->
+    </div>
+  </header>
+
+  <!-- Intro paragraph -->
+  <section>
+    <h3>PP434</h3>
+    <p>This is my website project for PP434 Automated Data Visualisation.</p>
+  </section>
+
+  <!-- Week 1 -->
+  <section>
+    <div class="chart-description">
+      <h3>Week 1 - Chart 1</h3>
+    </div>
+    <figure id="w1chart1"></figure>
+  </section>
+
+  <section> 
+    <div class="chart-description">
+      <h4>Week 1 - Chart 2</h4>
+    </div>
+    <figure id="w1chart2"></figure>
+  </section>
+      
+ <!-- Week 2 -->
  <section>
   <div class="chart-description">
-    <h3>Week 2</h3>
+    <h5>Week 2</h5>
     <p>This chart shows the CPI average in the US over the last 60 years.</p>
   </div>
   <figure id="chart1"></figure>
 </section>
 
-<script>
-    const chartSpec = "https://raw.githubusercontent.com/cami-paredes/cami-paredes.github.io/refs/heads/main/w2-visualization.vl.json";
-    vegaEmbed('#chart1', chartSpec)
-      .then(function(result) { console.log("Chart loaded!"); })
-      .catch(console.error);
-  </script>
-</body>
   
+<script>
+// Week 1 Chart 1
+  vegaEmbed('#w1chart1' , "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/charts/library/chartLine2.json")
+    .then(result => console.log("Week 1 Chart 1 loaded!"))
+    .catch(console.error);
+
+// Week 1 Chart 2
+  vegaEmbed('#w1chart2', "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/charts/library/chartArea3.json"
+    .then(result => console.log("Week 1 Chart 2 loaded!"))
+    .catch(console.error);
+
+</script>
+  
+
+  
+</body>
 </html>
