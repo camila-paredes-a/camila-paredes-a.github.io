@@ -1,65 +1,67 @@
-/* This is an example CSS file. If you include it in your portfolio, it'll provide some clean and basic styling */
-/* for your page. Feel free to experiment with the values, or copy them into a new file and use that instead. */
-
-/* These are comments in CSS. Comments don't do anything except explain your working to make code easier to understand. */
-
-
-body { /* We can style any HTML element by using its name - here we're styling the body */
-  /* We want text that uses a clean sans-serif font, is usually 16px big and close to black */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 16px;
+/* Body */
+body{
+  font-family: Georgia, Helvetica, 'Times New Roman', sans-serif;
+  font-size: 20px;
   color: #333;
-  line-height: 1.6;
-  /* we want a white page, that's centered and not too wide */
-  background-color: #fff;
+  line-height: 1.7;
+  background-color: #f5f0e6;
   margin:0 auto;
-  max-width: 800px;
-  padding-top: 60px;
+  padding-top: 0;
 }
 
+/* Centered content column */
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  color: #333;
-  margin-top: 24px;
-  margin-bottom: 16px;
+  color: #222;
+  margin-top: 60px;
   font-weight: 600;
 }
 
-/* We want the headings to be a little bigger than the paragraph text */
-.big { /* This is the class we created in the HTML file, you can use it to style any element */
-  font-size: 2.5em;
+h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
 }
 
 h2 {
-  font-size: 1.75em;
+  font-size: 30px;
+  margin-bottom: 16px;
 }
 
-.small {
-  font-size: 1.25em;
-}
-
-/* Paragraph */
 p {
   margin-bottom: 1em;
-  font-weight: 300;
+  font-weight: 350;
 }
 
+/* Margins */
 section {
-  margin-bottom: 2.5em;  /* We want a little more space between sections */
+  margin-bottom: 80px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 40px;
 }
 
 /* Links */
-/* We want the links to be a little more visible  and a different color */
 a {
-  color: #065f46;
+  color: #567;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
 }
-  
+
+/* Footnotes area */
+footer {
+  font-size: 16px;
+  color: #555;
+  margin-top: 60px;
+}
+
 /* Images */
 img {
   max-width: 100%;
