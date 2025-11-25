@@ -57,7 +57,7 @@
  <section>
   <div class="chart-description">
     <h5>Week 2</h5>
-    <p>This chart shows the CPI average in the US over the last 60 years.</p>
+    <p>Gold price per ounce in GBP over the last 55 years.</p>
   </div>
   <figure id="w2chart1"></figure>
 </section>
@@ -72,6 +72,11 @@
 // Week 1 Chart 2
   vegaEmbed('#w1chart2', "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/charts/library/chartArea3.json")
     .then(result => console.log("Week 1 Chart 2 loaded!"))
+    .catch(console.error);
+
+// Week 2 Chart 1
+  vegaEmbed('w2chart1', "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/W2-chart1.json")
+    .then(result => console.log("Week 2 Chart 1 loaded!"))
     .catch(console.error);
 
 </script>
