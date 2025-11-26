@@ -2,9 +2,9 @@
 body{
   font-family: Lato, Helvetica, sans-serif;
   font-size: 20px;
-  color: #333;
-  line-height: 1.7;
-  background-color: #f2f2f2;
+  color: #222;
+  line-height: 1.8;
+  background-color: #f7f7f7;
   margin:0 auto;
   padding-top: 0;
   max-width: 780px;
@@ -12,36 +12,36 @@ body{
   padding: 40px 30px;
 }
 
-/* Center everything and limit width */
-body > * {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 /* Container for sections */
 section {
   max-width: 900px;
   width: 90%;
-  background-color: #fff; /* optional: gives charts and text a card-like look */
-  padding: 30px 40px;
-  margin: 30px 0;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  border-radius: 8px;
+  background-color: #ffffff; /* optional: gives charts and text a card-like look */
+  padding: 40px 45px;
+  margin: 50px auto;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+  border-radius: 10px;
 }
 
-/* Top navigation layout */
+/* Top navigation layout HEADER */
+
 .top-nav {
+  width: 100%;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 40px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  max-width: 900px;
-  margin: 40px 0;
 }
 
 .nav-left, .nav-center, .nav-right {
   flex: 1;
+}
+
+.nav-left {
+  text-align: left;
 }
 
 .nav-center {
@@ -53,42 +53,32 @@ section {
 }
 
 .site-name {
+  font-size: 26px;
+  font-weight: 600;
   margin: 0;
-  font-size: 28px;
 }
 
 .page-title {
+  font-size: 22px;
+  font-weight: 400;
   margin: 0;
-  font-size: 32px;
+  color: #555;
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
   color: #222;
-  margin-top: 60px;
+  margin-top: 0;
   font-weight: 600;
 }
 
-h1 {
-  font-size: 42px;
-  margin-bottom: 20px;
-}
-
-h2 {
-  font-size: 30px;
-  margin-bottom: 16px;
+h3 {
+  font-size: 22px;
 }
 
 p {
-  margin-bottom: 1em;
-  font-weight: 350;
-}
-
-/* Margins */
-section {
-  margin-bottom: 80px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 40px;
+  font-size: 18px;
+  color: #444;
 }
 
 /* Links */
@@ -101,15 +91,13 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Footnotes area */
-footer {
-  font-size: 16px;
-  color: #555;
-  margin-top: 60px;
-}
-
 /* Images */
 img {
   max-width: 100%;
   height: auto;
+}
+
+figure {
+  width: 100%;
+  margin-top: 30px;
 }
