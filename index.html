@@ -48,17 +48,23 @@
       <h4>Week 1 - Chart 2</h4>
     </div>
     <figure id="w1chart2"></figure>
+  </section>
       
  <!-- Week 2 -->
  <section>
   <div class="chart-description">
     <h5>Week 2 - Chart 1</h5>
-    <p>Gold price per ounce in GBP over the last 55 years.</p>
+    <p>Gold price per ounce in GBP over the last 55 years</p>
   </div>
   <figure id="w2chart1"></figure>
+     <div class="chart-description">
+    <h5>Week 2 - Chart 2</h5>
+    <p>Inflation in Brazil 1996-2022</p>
+  </div>
+  <figure id="w2chart2"></figure>
 </section>
 
-  
+
 <script>
 // Week 1 Chart 1
   vegaEmbed('#w1chart1' , "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/charts/library/chartLine2.json")
@@ -75,10 +81,14 @@ vegaEmbed('#w2chart1', "https://raw.githubusercontent.com/camila-paredes-a/camil
     .then(result => console.log("Week 2 Chart 1 loaded!"))
     .catch(console.error);
 
+// Week 2 Chart 2
+vegaEmbed('#w2chart2', "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/W2-chart2.json")
+  .then(result => console.log("Week 2 Chart 2 loaded!"))
+  .catch(console.error);
 
-</script>
   
 
+</script>
   
 </body>
 </html>
