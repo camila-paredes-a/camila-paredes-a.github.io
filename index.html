@@ -1,94 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Camila Paredes | Data Visualisation Portfolio</title>
-
-  <!-- Link your CSS -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Vega libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camila Paredes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
 
-  <!-- Top navigation bar -->
-  <header class="top-nav">
-    <div class="nav-left">
-      <h1 class="site-name">Camila Paredes</h1>
+    <nav>
+        <a href="index.html" class="active" style="color: #264653; font-weight: 700;">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="project.html">New Breadline</a>
+        <a href="https://github.com/camila-paredes-a" target="_blank">GitHub</a>
+    </nav>
+
+    <div class="container" style="max-width: 650px; padding-top: 6rem;">
+        
+        <h1>Camila Paredes.</h1>
+        <p class="subtitle" style="margin-bottom: 3rem;">
+            Policy Data Science at the LSE.
+        </p>
+
+        <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+            I am a postgraduate student specializing in the intersection of <strong>econometric theory</strong> and <strong>automated data engineering</strong>.
+        </p>
+        <p style="font-size: 1.1rem; margin-bottom: 2rem;">
+            My work challenges official statistics by building tools that capture the real-time experience of inequality. Currently, I am developing "The New Breadline," an automated tracker for the UK cost of living crisis.
+        </p>
+
+        <a href="project.html" class="btn">View My Major Project</a>
+
+        <div style="margin-top: 5rem; border-top: 1px solid #e5e5e5; padding-top: 2rem;">
+            <a href="https://linkedin.com" target="_blank" style="border:none; margin-right: 20px; font-size: 1.4rem;">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:your.email@lse.ac.uk" style="border:none; margin-right: 20px; font-size: 1.4rem;">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <span style="font-size: 0.9rem; color: #6e6e6e; float: right; padding-top: 5px;">
+                &copy; 2025 Camila Paredes
+            </span>
+        </div>
+
+   
     </div>
 
-    <div class="nav-center">
-      <h2 class="page-title">Data Visualisation Portfolio</h2>
-    </div>
-
-    <div class="nav-right">
-      <!-- Future navigation links -->
-      <!-- <a href="#">Project</a> -->
-      <!-- <a href="#">LinkedIn</a> -->
-    </div>
-  </header>
-
-  <!-- Intro paragraph -->
-  <section>
-    <h3>PP434</h3>
-    <p>This is my website project for PP434 Automated Data Visualisation.</p>
-  </section>
-
-  <!-- Week 1 -->
-  <section>
-    <div class="chart-description">
-      <h3>Week 1 - Chart 1</h3>
-    </div>
-    <figure id="w1chart1"></figure>
-    <div class="chart-description">
-      <h4>Week 1 - Chart 2</h4>
-    </div>
-    <figure id="w1chart2"></figure>
-  </section>
-      
- <!-- Week 2 -->
- <section>
-  <div class="chart-description">
-    <h5>Week 2 - Chart 1</h5>
-    <p>Gold price per ounce in GBP over the last 55 years</p>
-  </div>
-  <figure id="w2chart1"></figure>
-     <div class="chart-description">
-    <h5>Week 2 - Chart 2</h5>
-    <p>Inflation in Brazil 1996-2022</p>
-  </div>
-  <figure id="w2chart2"></figure>
-</section>
-
-
-<script>
-// Week 1 Chart 1
-  vegaEmbed('#w1chart1' , "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/charts/library/chartLine2.json")
-    .then(result => console.log("Week 1 Chart 1 loaded!"))
-    .catch(console.error);
-
-// Week 1 Chart 2
-  vegaEmbed('#w1chart2', "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/charts/library/chartArea3.json")
-    .then(result => console.log("Week 1 Chart 2 loaded!"))
-    .catch(console.error);
-
-// Week 2 Chart 1
-vegaEmbed('#w2chart1', "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/W2-chart1.json")
-    .then(result => console.log("Week 2 Chart 1 loaded!"))
-    .catch(console.error);
-
-// Week 2 Chart 2
-vegaEmbed('#w2chart2', "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/W2-chart2.json")
-  .then(result => console.log("Week 2 Chart 2 loaded!"))
-  .catch(console.error);
-
-  
-
-</script>
-  
 </body>
 </html>

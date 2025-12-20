@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f9f9f9; /* Light background for freshness */
-    color: #333; /* Neutral text for professional look */
+    background-color: #f9f9f9; 
+    color: #333; 
     line-height: 1.6;
     display: flex;
     justify-content: center;
@@ -28,9 +28,9 @@ body {
 
 header {
     margin-bottom: 20px;
-    border-bottom: 3px solid #3A70E9;
+    border-bottom: 3px solid #0244ad;
     padding-bottom: 10px;
-    color: #3A70E9; /* Vibrant blue */
+    color: #0244ad; /* Vibrant blue */
     font-size: 2.5rem;
 }
 

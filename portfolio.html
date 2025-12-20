@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Camila Paredes | Data Visualisation Portfolio</title>
+
+  <!-- Link your CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Vega libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+
+<body>
+
+  <!-- Top navigation bar -->
+  <header class="top-nav">
+    <div class="nav-left">
+      <h1 class="site-name">Camila Paredes</h1>
+    </div>
+
+    <div class="nav-center">
+      <h2 class="page-title">Data Visualisation Portfolio</h2>
+    </div>
+
+    <div class="nav-right">
+      <!-- Future navigation links -->
+      <!-- <a href="#">Project</a> -->
+      <!-- <a href="#">LinkedIn</a> -->
+    </div>
+  </header>
+
+  <!-- Intro paragraph -->
+  <section>
+    <h3>PP434</h3>
+    <p>This is my website project for PP434 Automated Data Visualisation.</p>
+  </section>
+
+  <nav>
+    <a href="index.html" class="active">About</a> <a href="portfolio.html">Portfolio</a>      <a href="project.html">New Breadline</a>
+    <a href="https://github.com/camila-paredes-a" target="_blank">GitHub</a>
+</nav>
+
+  <!-- Week 1 -->
+  <section>
+    <div class="chart-description">
+      <h3>Week 1 - Chart 1</h3>
+    </div>
+    <figure id="w1chart1"></figure>
+    <div class="chart-description">
+      <h4>Week 1 - Chart 2</h4>
+    </div>
+    <figure id="w1chart2"></figure>
+  </section>
+      
+ <!-- Week 2 -->
+ <section>
+  <div class="chart-description">
+    <h5>Week 2 - Chart 1</h5>
+    <p>Gold price per ounce in GBP over the last 55 years</p>
+  </div>
+  <figure id="w2chart1"></figure>
+     <div class="chart-description">
+    <h5>Week 2 - Chart 2</h5>
+    <p>Inflation in Brazil 1996-2022</p>
+  </div>
+  <figure id="w2chart2"></figure>
+</section>
+
+
+<script>
+// Week 1 
+  vegaEmbed('#w1chart1' , "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/charts/library/chartLine2.json")
+    .then(result => console.log("Week 1 Chart 1 loaded!"))
+    .catch(console.error);
+
+// Week 1 Chart 2
+  vegaEmbed('#w1chart2', "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/charts/library/chartArea3.json")
+    .then(result => console.log("Week 1 Chart 2 loaded!"))
+    .catch(console.error);
+
+// Week 2 Chart 1
+vegaEmbed('#w2chart1', "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/W2-chart1.json")
+    .then(result => console.log("Week 2 Chart 1 loaded!"))
+    .catch(console.error);
+
+// Week 2 Chart 2
+vegaEmbed('#w2chart2', "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/W2-chart2.json")
+  .then(result => console.log("Week 2 Chart 2 loaded!"))
+  .catch(console.error);
+
+  
+
+</script>
+  
+</body>
+</html>
