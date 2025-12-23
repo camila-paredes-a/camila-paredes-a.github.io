@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "NHS Healthcare Expenditure (2003-2024)",
+    "fontSize": 21,
+    "font": "Proxima nova, sans-serif",
+    "anchor": "start",
+    "color": "#1F2A44",
+    "subtitle": "Total current healthcare expenditure in billions"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/healthcare_expenditure_clean.csv"
+  },
+  "mark": {
+    "type": "area",
+    "line": true,
+    "point": true,
+    "color": "#0070ff",
+    "filled": true,
+    "opacity": 0.25,
+    "size": 4,
+    "pointSize": 80,
+    "interpolate": "monotone"
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "title": null,
+      "axis": {
+        "labelAngle": 0,
+        "labelFontSize": 10,
+        "domain": false,
+        "ticks": false,
+        "labelColor": "#666",
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Expenditure",
+      "type": "quantitative",
+      "title": "£ billions",
+      "axis": {
+        "labelFontSize": 10,
+        "labelColor": "#666",
+        "labelExpr": "datum.value / 1000",
+        "format": ".0f",
+        "grid": true,
+        "gridColor": "#e0e0e0",
+        "gridOpacity": 0.4,
+        "ticks": false
+      }
+    },
+    "tooltip": [
+      {"field": "Year", "type": "ordinal", "title": "Year"},
+      {
+        "field": "Expenditure",
+        "type": "quantitative",
+        "title": "Expenditure (£m)",
+        "format": ",.0f"
+      }
+    ]
+  },
+  "width": 750,
+  "height": 420,
+  "config": {
+    "view": {"stroke": null, "fill": "#ffffff"},
+    "font": "Proxima, sans-serif",
+    "background": "white"
+  }
+}
