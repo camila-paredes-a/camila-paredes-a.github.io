@@ -1,62 +1,63 @@
-/* General Reset */
-* {
+body {
+    background-color: #fafafa;
+    color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f9f9f9; 
-    color: #333; 
-    line-height: 1.6;
-    justify-content: center;
-    text-align: center;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;
+    min-height: 100vh;      
 }
 
-.container {
-    max-width: 1200px;
-    width: 100%;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-header {
-    margin-bottom: 20px;
-    border-bottom: 3px solid #0244ad;
-    padding-bottom: 10px;
-    color: #0244ad; /* Vibrant blue */
-    font-size: 2.5rem;
-}
-
-.description {
-    font-size: 1.2rem;
-    margin: 15px 0 25px;
-}
-
-button {
-    padding: 10px 20px;
-    background: linear-gradient(to right, #34c4c8, #3A70E9);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: transform 0.2s ease-in-out;
-}
-
-button:hover {
-    transform: scale(1.1);
-}
-
-.card {
-    display: inline-block;
+.profile-container {
     text-align: center;
-    border-radius: 8px;
+    max-width: 600px;
+    padding: 20px;
 }
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes it a circle */
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 { font-weight: 700; margin-bottom: 10px; font-size: 2.5rem; }
+p.bio { font-size: 1.2rem; color: #666; margin-bottom: 30px; line-height: 1.5; }
+
+.links {
+    display: flex;
+    flex-direction: column; /* Stacks buttons vertically */
+    gap: 15px;
+    width: 100%;
+    max-width: 300px; /* Limits button width */
+    margin: 0 auto;   /* Centers the stack */
+}
+
+.link-btn {
+    display: block;
+    padding: 12px 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.link-btn:hover {
+    background: #264653; /* Your Teal Accent */
+    color: white;
+    border-color: #264653;
+    transform: translateY(-2px);
+}
+
+.socials { margin-top: 30px; }
+.socials a { color: #888; font-size: 1.5rem; margin: 0 10px; transition: color 0.2s; }
+.socials a:hover { color: #264653; }
