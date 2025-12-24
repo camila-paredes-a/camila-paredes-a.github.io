@@ -69,6 +69,28 @@
   <figure id="w2chart2"></figure>
 </section>
 
+<!-- Week 3 -->
+<section>
+  <div class="project-item">
+    <h3>Week 3: NHS Funding vs. Performance</h3>
+    <!-- Policy Debate Statement -->
+    <p style="margin-bottom: 20px; font-style: italic; color: #555;">
+      Rising NHS healthcare spending has failed to improve A&E performance; attendances exceeding 4-hour standards have tripled despite increased investment.
+    </p>
+    <!-- Chart 1: Healthcare Expenditure -->
+    <div id="w3chart1" style="width: 100%; overflow-x: auto;"></div>
+    <!-- Commentary on Funding -->
+    <p style="margin-top: 15px; margin-bottom: 20px; color: #666;">
+      NHS funding increased 213% from 2003-2024 (£101bn to £317bn), representing sustained government investment in healthcare resources.
+    </p>
+    <!-- Chart 2: A&E Waiting Times -->
+    <div id="w3chart2" style="width: 100%; overflow-x: auto;"></div>
+    <!-- Commentary on Waiting Times -->
+    <p style="margin-top: 15px; font-weight: 700; color: #264653;">
+      Yet A&E attendances exceeding 4 hours tripled over the same period, suggesting systemic capacity issues persist despite higher spending.
+    </p>
+  </div>
+</section>
 
 <script>
 // Week 1 
@@ -91,7 +113,23 @@ vegaEmbed('#w2chart2', "https://raw.githubusercontent.com/camila-paredes-a/camil
   .then(result => console.log("Week 2 Chart 2 loaded!"))
   .catch(console.error);
 
+// Week 3 Chart 1
+vegaEmbed('#w3chart1', "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/nhs_healthcare_expenditure.json")
+  .then(result => console.log("Week 3 Chart 1 loaded!"))
+  .catch(console.error);
+
+// Week 3 Chart 2
+vegaEmbed('#nhsChart', "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/ae_attendances_4hrs.json")
+  .then(result => console.log("Week 3 Chart 2 loaded!" ))
+  .catch(console.error);
+
   
+
+</script>
+  
+</body>
+</html>
+
 
 </script>
   
