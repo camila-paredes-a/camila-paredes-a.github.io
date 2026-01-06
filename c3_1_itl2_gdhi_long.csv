@@ -1,0 +1,505 @@
+itl2_code,region_name,year,gdhi_per_head
+TLC3,Tees Valley,2013,14228.0
+TLC3,Tees Valley,2014,14704.0
+TLC3,Tees Valley,2015,15113.0
+TLC3,Tees Valley,2016,15312.0
+TLC3,Tees Valley,2017,15634.0
+TLC3,Tees Valley,2018,16041.0
+TLC3,Tees Valley,2019,16638.0
+TLC3,Tees Valley,2020,16916.0
+TLC3,Tees Valley,2021,17270.0
+TLC3,Tees Valley,2022,18018.0
+TLC3,Tees Valley,2023,19480.0
+TLC4,"Northumberland, Durham and Tyne & Wear",2013,14668.0
+TLC4,"Northumberland, Durham and Tyne & Wear",2014,15039.0
+TLC4,"Northumberland, Durham and Tyne & Wear",2015,15646.0
+TLC4,"Northumberland, Durham and Tyne & Wear",2016,15849.0
+TLC4,"Northumberland, Durham and Tyne & Wear",2017,16162.0
+TLC4,"Northumberland, Durham and Tyne & Wear",2018,16571.0
+TLC4,"Northumberland, Durham and Tyne & Wear",2019,17120.0
+TLC4,"Northumberland, Durham and Tyne & Wear",2020,17312.0
+TLC4,"Northumberland, Durham and Tyne & Wear",2021,17792.0
+TLC4,"Northumberland, Durham and Tyne & Wear",2022,18558.0
+TLC4,"Northumberland, Durham and Tyne & Wear",2023,20149.0
+TLD1,Cumbria,2013,16892.0
+TLD1,Cumbria,2014,17380.0
+TLD1,Cumbria,2015,18102.0
+TLD1,Cumbria,2016,18214.0
+TLD1,Cumbria,2017,18585.0
+TLD1,Cumbria,2018,18959.0
+TLD1,Cumbria,2019,19551.0
+TLD1,Cumbria,2020,19690.0
+TLD1,Cumbria,2021,20026.0
+TLD1,Cumbria,2022,20973.0
+TLD1,Cumbria,2023,23070.0
+TLD3,Greater Manchester,2013,14773.0
+TLD3,Greater Manchester,2014,15134.0
+TLD3,Greater Manchester,2015,15800.0
+TLD3,Greater Manchester,2016,15903.0
+TLD3,Greater Manchester,2017,16394.0
+TLD3,Greater Manchester,2018,16885.0
+TLD3,Greater Manchester,2019,17479.0
+TLD3,Greater Manchester,2020,17684.0
+TLD3,Greater Manchester,2021,18229.0
+TLD3,Greater Manchester,2022,19236.0
+TLD3,Greater Manchester,2023,20813.0
+TLD4,Lancashire,2013,14814.0
+TLD4,Lancashire,2014,15175.0
+TLD4,Lancashire,2015,15852.0
+TLD4,Lancashire,2016,16051.0
+TLD4,Lancashire,2017,16612.0
+TLD4,Lancashire,2018,17074.0
+TLD4,Lancashire,2019,17593.0
+TLD4,Lancashire,2020,17761.0
+TLD4,Lancashire,2021,18238.0
+TLD4,Lancashire,2022,19089.0
+TLD4,Lancashire,2023,20761.0
+TLD6,Cheshire,2013,18363.0
+TLD6,Cheshire,2014,18903.0
+TLD6,Cheshire,2015,20061.0
+TLD6,Cheshire,2016,20008.0
+TLD6,Cheshire,2017,20627.0
+TLD6,Cheshire,2018,21457.0
+TLD6,Cheshire,2019,22169.0
+TLD6,Cheshire,2020,22088.0
+TLD6,Cheshire,2021,22713.0
+TLD6,Cheshire,2022,23785.0
+TLD6,Cheshire,2023,25962.0
+TLD7,Merseyside,2013,14961.0
+TLD7,Merseyside,2014,15307.0
+TLD7,Merseyside,2015,15916.0
+TLD7,Merseyside,2016,16067.0
+TLD7,Merseyside,2017,16437.0
+TLD7,Merseyside,2018,16810.0
+TLD7,Merseyside,2019,17380.0
+TLD7,Merseyside,2020,17621.0
+TLD7,Merseyside,2021,18021.0
+TLD7,Merseyside,2022,18862.0
+TLD7,Merseyside,2023,20431.0
+TLE1,East Yorkshire and Northern Lincolnshire,2013,14341.0
+TLE1,East Yorkshire and Northern Lincolnshire,2014,14695.0
+TLE1,East Yorkshire and Northern Lincolnshire,2015,15392.0
+TLE1,East Yorkshire and Northern Lincolnshire,2016,15552.0
+TLE1,East Yorkshire and Northern Lincolnshire,2017,16069.0
+TLE1,East Yorkshire and Northern Lincolnshire,2018,16680.0
+TLE1,East Yorkshire and Northern Lincolnshire,2019,17181.0
+TLE1,East Yorkshire and Northern Lincolnshire,2020,17473.0
+TLE1,East Yorkshire and Northern Lincolnshire,2021,17935.0
+TLE1,East Yorkshire and Northern Lincolnshire,2022,18900.0
+TLE1,East Yorkshire and Northern Lincolnshire,2023,20464.0
+TLE2,North Yorkshire,2013,18005.0
+TLE2,North Yorkshire,2014,18364.0
+TLE2,North Yorkshire,2015,19479.0
+TLE2,North Yorkshire,2016,19564.0
+TLE2,North Yorkshire,2017,20188.0
+TLE2,North Yorkshire,2018,21109.0
+TLE2,North Yorkshire,2019,21730.0
+TLE2,North Yorkshire,2020,21676.0
+TLE2,North Yorkshire,2021,22465.0
+TLE2,North Yorkshire,2022,23628.0
+TLE2,North Yorkshire,2023,25918.0
+TLE3,South Yorkshire,2013,14045.0
+TLE3,South Yorkshire,2014,14610.0
+TLE3,South Yorkshire,2015,15174.0
+TLE3,South Yorkshire,2016,15286.0
+TLE3,South Yorkshire,2017,15729.0
+TLE3,South Yorkshire,2018,16179.0
+TLE3,South Yorkshire,2019,16662.0
+TLE3,South Yorkshire,2020,16931.0
+TLE3,South Yorkshire,2021,17432.0
+TLE3,South Yorkshire,2022,18315.0
+TLE3,South Yorkshire,2023,19795.0
+TLE4,West Yorkshire,2013,14503.0
+TLE4,West Yorkshire,2014,14875.0
+TLE4,West Yorkshire,2015,15563.0
+TLE4,West Yorkshire,2016,15607.0
+TLE4,West Yorkshire,2017,16037.0
+TLE4,West Yorkshire,2018,16567.0
+TLE4,West Yorkshire,2019,17145.0
+TLE4,West Yorkshire,2020,17320.0
+TLE4,West Yorkshire,2021,17796.0
+TLE4,West Yorkshire,2022,18731.0
+TLE4,West Yorkshire,2023,20272.0
+TLF1,Derbyshire and Nottinghamshire,2013,14957.0
+TLF1,Derbyshire and Nottinghamshire,2014,15456.0
+TLF1,Derbyshire and Nottinghamshire,2015,16280.0
+TLF1,Derbyshire and Nottinghamshire,2016,16305.0
+TLF1,Derbyshire and Nottinghamshire,2017,16649.0
+TLF1,Derbyshire and Nottinghamshire,2018,17204.0
+TLF1,Derbyshire and Nottinghamshire,2019,17832.0
+TLF1,Derbyshire and Nottinghamshire,2020,18042.0
+TLF1,Derbyshire and Nottinghamshire,2021,18572.0
+TLF1,Derbyshire and Nottinghamshire,2022,19524.0
+TLF1,Derbyshire and Nottinghamshire,2023,21205.0
+TLF2,"Leicestershire, Rutland and Northamptonshire",2013,15895.0
+TLF2,"Leicestershire, Rutland and Northamptonshire",2014,16343.0
+TLF2,"Leicestershire, Rutland and Northamptonshire",2015,17127.0
+TLF2,"Leicestershire, Rutland and Northamptonshire",2016,17138.0
+TLF2,"Leicestershire, Rutland and Northamptonshire",2017,17723.0
+TLF2,"Leicestershire, Rutland and Northamptonshire",2018,18221.0
+TLF2,"Leicestershire, Rutland and Northamptonshire",2019,18802.0
+TLF2,"Leicestershire, Rutland and Northamptonshire",2020,18896.0
+TLF2,"Leicestershire, Rutland and Northamptonshire",2021,19520.0
+TLF2,"Leicestershire, Rutland and Northamptonshire",2022,20475.0
+TLF2,"Leicestershire, Rutland and Northamptonshire",2023,22095.0
+TLF3,Lincolnshire,2013,15673.0
+TLF3,Lincolnshire,2014,16176.0
+TLF3,Lincolnshire,2015,16724.0
+TLF3,Lincolnshire,2016,16755.0
+TLF3,Lincolnshire,2017,17218.0
+TLF3,Lincolnshire,2018,17759.0
+TLF3,Lincolnshire,2019,18389.0
+TLF3,Lincolnshire,2020,18548.0
+TLF3,Lincolnshire,2021,19102.0
+TLF3,Lincolnshire,2022,20157.0
+TLF3,Lincolnshire,2023,21854.0
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2013,17724.0
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2014,18355.0
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2015,19523.0
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2016,20044.0
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2017,20186.0
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2018,20825.0
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2019,21383.0
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2020,21314.0
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2021,21890.0
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2022,23019.0
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2023,25059.0
+TLG2,Shropshire and Staffordshire,2013,15584.0
+TLG2,Shropshire and Staffordshire,2014,16074.0
+TLG2,Shropshire and Staffordshire,2015,16952.0
+TLG2,Shropshire and Staffordshire,2016,17068.0
+TLG2,Shropshire and Staffordshire,2017,17375.0
+TLG2,Shropshire and Staffordshire,2018,17971.0
+TLG2,Shropshire and Staffordshire,2019,18554.0
+TLG2,Shropshire and Staffordshire,2020,18646.0
+TLG2,Shropshire and Staffordshire,2021,19101.0
+TLG2,Shropshire and Staffordshire,2022,20059.0
+TLG2,Shropshire and Staffordshire,2023,21798.0
+TLG3,West Midlands,2013,13494.0
+TLG3,West Midlands,2014,14036.0
+TLG3,West Midlands,2015,14595.0
+TLG3,West Midlands,2016,14861.0
+TLG3,West Midlands,2017,15048.0
+TLG3,West Midlands,2018,15414.0
+TLG3,West Midlands,2019,15884.0
+TLG3,West Midlands,2020,16079.0
+TLG3,West Midlands,2021,16641.0
+TLG3,West Midlands,2022,17519.0
+TLG3,West Midlands,2023,18900.0
+TLH2,Bedfordshire and Hertfordshire,2013,19782.0
+TLH2,Bedfordshire and Hertfordshire,2014,20452.0
+TLH2,Bedfordshire and Hertfordshire,2015,21642.0
+TLH2,Bedfordshire and Hertfordshire,2016,21872.0
+TLH2,Bedfordshire and Hertfordshire,2017,22422.0
+TLH2,Bedfordshire and Hertfordshire,2018,23257.0
+TLH2,Bedfordshire and Hertfordshire,2019,23810.0
+TLH2,Bedfordshire and Hertfordshire,2020,23548.0
+TLH2,Bedfordshire and Hertfordshire,2021,24438.0
+TLH2,Bedfordshire and Hertfordshire,2022,25841.0
+TLH2,Bedfordshire and Hertfordshire,2023,28061.0
+TLH3,Essex,2013,17963.0
+TLH3,Essex,2014,18435.0
+TLH3,Essex,2015,19560.0
+TLH3,Essex,2016,20065.0
+TLH3,Essex,2017,20831.0
+TLH3,Essex,2018,21744.0
+TLH3,Essex,2019,22302.0
+TLH3,Essex,2020,22270.0
+TLH3,Essex,2021,23021.0
+TLH3,Essex,2022,24217.0
+TLH3,Essex,2023,26236.0
+TLH4,Cambridgeshire and Peterborough,2013,17560.0
+TLH4,Cambridgeshire and Peterborough,2014,18344.0
+TLH4,Cambridgeshire and Peterborough,2015,19128.0
+TLH4,Cambridgeshire and Peterborough,2016,19516.0
+TLH4,Cambridgeshire and Peterborough,2017,19965.0
+TLH4,Cambridgeshire and Peterborough,2018,20527.0
+TLH4,Cambridgeshire and Peterborough,2019,21220.0
+TLH4,Cambridgeshire and Peterborough,2020,21174.0
+TLH4,Cambridgeshire and Peterborough,2021,21680.0
+TLH4,Cambridgeshire and Peterborough,2022,22851.0
+TLH4,Cambridgeshire and Peterborough,2023,24862.0
+TLH5,Norfolk,2013,15793.0
+TLH5,Norfolk,2014,16158.0
+TLH5,Norfolk,2015,17023.0
+TLH5,Norfolk,2016,17055.0
+TLH5,Norfolk,2017,17619.0
+TLH5,Norfolk,2018,18286.0
+TLH5,Norfolk,2019,18946.0
+TLH5,Norfolk,2020,18936.0
+TLH5,Norfolk,2021,19560.0
+TLH5,Norfolk,2022,20589.0
+TLH5,Norfolk,2023,22357.0
+TLH6,Suffolk,2013,16795.0
+TLH6,Suffolk,2014,17259.0
+TLH6,Suffolk,2015,18240.0
+TLH6,Suffolk,2016,18411.0
+TLH6,Suffolk,2017,18748.0
+TLH6,Suffolk,2018,19448.0
+TLH6,Suffolk,2019,19889.0
+TLH6,Suffolk,2020,19892.0
+TLH6,Suffolk,2021,20733.0
+TLH6,Suffolk,2022,21906.0
+TLH6,Suffolk,2023,23754.0
+TLI3,Inner London - West,2013,43343.0
+TLI3,Inner London - West,2014,46266.0
+TLI3,Inner London - West,2015,49463.0
+TLI3,Inner London - West,2016,50377.0
+TLI3,Inner London - West,2017,51442.0
+TLI3,Inner London - West,2018,54743.0
+TLI3,Inner London - West,2019,55655.0
+TLI3,Inner London - West,2020,53950.0
+TLI3,Inner London - West,2021,57517.0
+TLI3,Inner London - West,2022,60291.0
+TLI3,Inner London - West,2023,65958.0
+TLI4,Inner London - East,2013,21328.0
+TLI4,Inner London - East,2014,22313.0
+TLI4,Inner London - East,2015,24084.0
+TLI4,Inner London - East,2016,24718.0
+TLI4,Inner London - East,2017,25467.0
+TLI4,Inner London - East,2018,26994.0
+TLI4,Inner London - East,2019,27797.0
+TLI4,Inner London - East,2020,27688.0
+TLI4,Inner London - East,2021,29154.0
+TLI4,Inner London - East,2022,30693.0
+TLI4,Inner London - East,2023,32993.0
+TLI5,Outer London - East and North East,2013,18175.0
+TLI5,Outer London - East and North East,2014,18703.0
+TLI5,Outer London - East and North East,2015,19894.0
+TLI5,Outer London - East and North East,2016,20384.0
+TLI5,Outer London - East and North East,2017,20795.0
+TLI5,Outer London - East and North East,2018,21868.0
+TLI5,Outer London - East and North East,2019,22280.0
+TLI5,Outer London - East and North East,2020,22318.0
+TLI5,Outer London - East and North East,2021,23207.0
+TLI5,Outer London - East and North East,2022,24718.0
+TLI5,Outer London - East and North East,2023,26796.0
+TLI6,Outer London - South,2013,21881.0
+TLI6,Outer London - South,2014,22486.0
+TLI6,Outer London - South,2015,23967.0
+TLI6,Outer London - South,2016,24308.0
+TLI6,Outer London - South,2017,24519.0
+TLI6,Outer London - South,2018,25907.0
+TLI6,Outer London - South,2019,26260.0
+TLI6,Outer London - South,2020,25887.0
+TLI6,Outer London - South,2021,27097.0
+TLI6,Outer London - South,2022,28911.0
+TLI6,Outer London - South,2023,31553.0
+TLI7,Outer London - West and North West,2013,22440.0
+TLI7,Outer London - West and North West,2014,23256.0
+TLI7,Outer London - West and North West,2015,25062.0
+TLI7,Outer London - West and North West,2016,25253.0
+TLI7,Outer London - West and North West,2017,25463.0
+TLI7,Outer London - West and North West,2018,26677.0
+TLI7,Outer London - West and North West,2019,26927.0
+TLI7,Outer London - West and North West,2020,26367.0
+TLI7,Outer London - West and North West,2021,27883.0
+TLI7,Outer London - West and North West,2022,29709.0
+TLI7,Outer London - West and North West,2023,32340.0
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2013,20781.0
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2014,21359.0
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2015,22709.0
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2016,22992.0
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2017,23659.0
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2018,24487.0
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2019,25280.0
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2020,24804.0
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2021,25584.0
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2022,27022.0
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2023,29179.0
+TLJ2,"Surrey, East and West Sussex",2013,21856.0
+TLJ2,"Surrey, East and West Sussex",2014,22336.0
+TLJ2,"Surrey, East and West Sussex",2015,23720.0
+TLJ2,"Surrey, East and West Sussex",2016,23994.0
+TLJ2,"Surrey, East and West Sussex",2017,24548.0
+TLJ2,"Surrey, East and West Sussex",2018,25496.0
+TLJ2,"Surrey, East and West Sussex",2019,26266.0
+TLJ2,"Surrey, East and West Sussex",2020,25747.0
+TLJ2,"Surrey, East and West Sussex",2021,26757.0
+TLJ2,"Surrey, East and West Sussex",2022,28363.0
+TLJ2,"Surrey, East and West Sussex",2023,30827.0
+TLJ3,Hampshire and Isle of Wight,2013,18442.0
+TLJ3,Hampshire and Isle of Wight,2014,18836.0
+TLJ3,Hampshire and Isle of Wight,2015,19905.0
+TLJ3,Hampshire and Isle of Wight,2016,20070.0
+TLJ3,Hampshire and Isle of Wight,2017,20581.0
+TLJ3,Hampshire and Isle of Wight,2018,21355.0
+TLJ3,Hampshire and Isle of Wight,2019,22034.0
+TLJ3,Hampshire and Isle of Wight,2020,21825.0
+TLJ3,Hampshire and Isle of Wight,2021,22413.0
+TLJ3,Hampshire and Isle of Wight,2022,23542.0
+TLJ3,Hampshire and Isle of Wight,2023,25363.0
+TLJ4,Kent,2013,18208.0
+TLJ4,Kent,2014,18650.0
+TLJ4,Kent,2015,19572.0
+TLJ4,Kent,2016,20038.0
+TLJ4,Kent,2017,20504.0
+TLJ4,Kent,2018,21106.0
+TLJ4,Kent,2019,21818.0
+TLJ4,Kent,2020,21805.0
+TLJ4,Kent,2021,22703.0
+TLJ4,Kent,2022,23885.0
+TLJ4,Kent,2023,25743.0
+TLK3,Cornwall and Isles of Scilly,2013,15665.0
+TLK3,Cornwall and Isles of Scilly,2014,16059.0
+TLK3,Cornwall and Isles of Scilly,2015,16606.0
+TLK3,Cornwall and Isles of Scilly,2016,16986.0
+TLK3,Cornwall and Isles of Scilly,2017,17647.0
+TLK3,Cornwall and Isles of Scilly,2018,18209.0
+TLK3,Cornwall and Isles of Scilly,2019,18849.0
+TLK3,Cornwall and Isles of Scilly,2020,19284.0
+TLK3,Cornwall and Isles of Scilly,2021,20143.0
+TLK3,Cornwall and Isles of Scilly,2022,21281.0
+TLK3,Cornwall and Isles of Scilly,2023,23216.0
+TLK4,Devon,2013,16424.0
+TLK4,Devon,2014,16869.0
+TLK4,Devon,2015,17547.0
+TLK4,Devon,2016,17678.0
+TLK4,Devon,2017,18073.0
+TLK4,Devon,2018,18673.0
+TLK4,Devon,2019,19319.0
+TLK4,Devon,2020,19540.0
+TLK4,Devon,2021,20189.0
+TLK4,Devon,2022,21338.0
+TLK4,Devon,2023,23333.0
+TLK5,West of England,2013,17371.0
+TLK5,West of England,2014,18027.0
+TLK5,West of England,2015,19125.0
+TLK5,West of England,2016,19359.0
+TLK5,West of England,2017,19817.0
+TLK5,West of England,2018,20687.0
+TLK5,West of England,2019,21369.0
+TLK5,West of England,2020,21178.0
+TLK5,West of England,2021,22045.0
+TLK5,West of England,2022,23444.0
+TLK5,West of England,2023,25446.0
+TLK6,"North Somerset, Somerset and Dorset",2013,17853.0
+TLK6,"North Somerset, Somerset and Dorset",2014,18399.0
+TLK6,"North Somerset, Somerset and Dorset",2015,19242.0
+TLK6,"North Somerset, Somerset and Dorset",2016,19299.0
+TLK6,"North Somerset, Somerset and Dorset",2017,19680.0
+TLK6,"North Somerset, Somerset and Dorset",2018,20419.0
+TLK6,"North Somerset, Somerset and Dorset",2019,21200.0
+TLK6,"North Somerset, Somerset and Dorset",2020,21287.0
+TLK6,"North Somerset, Somerset and Dorset",2021,21999.0
+TLK6,"North Somerset, Somerset and Dorset",2022,23251.0
+TLK6,"North Somerset, Somerset and Dorset",2023,25497.0
+TLK7,Gloucestershire and Wiltshire,2013,18189.0
+TLK7,Gloucestershire and Wiltshire,2014,18935.0
+TLK7,Gloucestershire and Wiltshire,2015,19683.0
+TLK7,Gloucestershire and Wiltshire,2016,19829.0
+TLK7,Gloucestershire and Wiltshire,2017,20173.0
+TLK7,Gloucestershire and Wiltshire,2018,20977.0
+TLK7,Gloucestershire and Wiltshire,2019,21744.0
+TLK7,Gloucestershire and Wiltshire,2020,21605.0
+TLK7,Gloucestershire and Wiltshire,2021,22204.0
+TLK7,Gloucestershire and Wiltshire,2022,23524.0
+TLK7,Gloucestershire and Wiltshire,2023,25724.0
+TLL3,North Wales,2013,15101.0
+TLL3,North Wales,2014,15618.0
+TLL3,North Wales,2015,16176.0
+TLL3,North Wales,2016,16310.0
+TLL3,North Wales,2017,16804.0
+TLL3,North Wales,2018,17315.0
+TLL3,North Wales,2019,17671.0
+TLL3,North Wales,2020,17886.0
+TLL3,North Wales,2021,18428.0
+TLL3,North Wales,2022,19275.0
+TLL3,North Wales,2023,20670.0
+TLL4,Mid and South West Wales,2013,14589.0
+TLL4,Mid and South West Wales,2014,15095.0
+TLL4,Mid and South West Wales,2015,15479.0
+TLL4,Mid and South West Wales,2016,15534.0
+TLL4,Mid and South West Wales,2017,16135.0
+TLL4,Mid and South West Wales,2018,16667.0
+TLL4,Mid and South West Wales,2019,17158.0
+TLL4,Mid and South West Wales,2020,17477.0
+TLL4,Mid and South West Wales,2021,17973.0
+TLL4,Mid and South West Wales,2022,18519.0
+TLL4,Mid and South West Wales,2023,19756.0
+TLL5,South East Wales,2013,14392.0
+TLL5,South East Wales,2014,14835.0
+TLL5,South East Wales,2015,15376.0
+TLL5,South East Wales,2016,15541.0
+TLL5,South East Wales,2017,16101.0
+TLL5,South East Wales,2018,16835.0
+TLL5,South East Wales,2019,17329.0
+TLL5,South East Wales,2020,17540.0
+TLL5,South East Wales,2021,18128.0
+TLL5,South East Wales,2022,18870.0
+TLL5,South East Wales,2023,20129.0
+TLM0,Eastern Scotland,2013,16249.0
+TLM0,Eastern Scotland,2014,16615.0
+TLM0,Eastern Scotland,2015,17174.0
+TLM0,Eastern Scotland,2016,17412.0
+TLM0,Eastern Scotland,2017,17767.0
+TLM0,Eastern Scotland,2018,18089.0
+TLM0,Eastern Scotland,2019,18743.0
+TLM0,Eastern Scotland,2020,18748.0
+TLM0,Eastern Scotland,2021,19300.0
+TLM0,Eastern Scotland,2022,20547.0
+TLM0,Eastern Scotland,2023,22361.0
+TLM1,East Central Scotland,2013,18293.0
+TLM1,East Central Scotland,2014,18749.0
+TLM1,East Central Scotland,2015,19358.0
+TLM1,East Central Scotland,2016,19662.0
+TLM1,East Central Scotland,2017,20165.0
+TLM1,East Central Scotland,2018,20814.0
+TLM1,East Central Scotland,2019,21734.0
+TLM1,East Central Scotland,2020,21636.0
+TLM1,East Central Scotland,2021,22644.0
+TLM1,East Central Scotland,2022,24017.0
+TLM1,East Central Scotland,2023,25964.0
+TLM2,Highlands and Islands,2013,16436.0
+TLM2,Highlands and Islands,2014,16676.0
+TLM2,Highlands and Islands,2015,17336.0
+TLM2,Highlands and Islands,2016,17558.0
+TLM2,Highlands and Islands,2017,17958.0
+TLM2,Highlands and Islands,2018,18732.0
+TLM2,Highlands and Islands,2019,19470.0
+TLM2,Highlands and Islands,2020,19386.0
+TLM2,Highlands and Islands,2021,19932.0
+TLM2,Highlands and Islands,2022,21148.0
+TLM3,West Central Scotland,2013,15377.0
+TLM3,West Central Scotland,2014,15864.0
+TLM3,West Central Scotland,2015,16431.0
+TLM3,West Central Scotland,2016,16736.0
+TLM3,West Central Scotland,2017,16993.0
+TLM3,West Central Scotland,2018,17295.0
+TLM3,West Central Scotland,2019,17959.0
+TLM3,West Central Scotland,2020,18082.0
+TLM3,West Central Scotland,2021,18704.0
+TLM3,West Central Scotland,2022,19650.0
+TLM3,West Central Scotland,2023,21194.0
+TLM5,North Eastern Scotland,2013,21064.0
+TLM5,North Eastern Scotland,2014,21546.0
+TLM5,North Eastern Scotland,2015,21495.0
+TLM5,North Eastern Scotland,2016,20463.0
+TLM5,North Eastern Scotland,2017,20579.0
+TLM5,North Eastern Scotland,2018,20952.0
+TLM5,North Eastern Scotland,2019,21621.0
+TLM5,North Eastern Scotland,2020,20961.0
+TLM5,North Eastern Scotland,2021,21319.0
+TLM5,North Eastern Scotland,2022,22277.0
+TLM5,North Eastern Scotland,2023,23924.0
+TLM9,Southern Scotland,2013,15835.0
+TLM9,Southern Scotland,2014,16174.0
+TLM9,Southern Scotland,2015,16722.0
+TLM9,Southern Scotland,2016,16902.0
+TLM9,Southern Scotland,2017,17201.0
+TLM9,Southern Scotland,2018,17570.0
+TLM9,Southern Scotland,2019,18357.0
+TLM9,Southern Scotland,2020,18544.0
+TLM9,Southern Scotland,2021,19170.0
+TLM9,Southern Scotland,2022,20256.0
+TLN0,Northern Ireland,2013,14304.0
+TLN0,Northern Ireland,2014,14757.0
+TLN0,Northern Ireland,2015,15245.0
+TLN0,Northern Ireland,2016,15476.0
+TLN0,Northern Ireland,2017,15861.0
+TLN0,Northern Ireland,2018,16215.0
+TLN0,Northern Ireland,2019,16795.0
+TLN0,Northern Ireland,2020,16971.0
+TLN0,Northern Ireland,2021,17807.0
+TLN0,Northern Ireland,2022,18903.0
+TLN0,Northern Ireland,2023,20403.0
