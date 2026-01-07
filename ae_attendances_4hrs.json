@@ -11,8 +11,8 @@
   "data": {
     "url": "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/waiting_times_p.csv"
   },
-  "width": 500,
-  "height": 350,
+  "width": 700,
+  "height": 400,
   "encoding": {
     "x": {
       "field": "Year",
