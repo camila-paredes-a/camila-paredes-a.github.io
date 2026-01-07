@@ -247,14 +247,21 @@
         .catch(console.error);
 
       // CC6 Charts
-   
-    const cc6_countries = ['USA', 'CHN', 'JPN', 'DEU', 'GBR', 'IND'];
+    const cc6_countries = [
+        { code: "USA", name: "United States" },
+        { code: "CHN", name: "China" },
+        { code: "JPN", name: "Japan" },
+        { code: "DEU", name: "Germany" },
+        { code: "GBR", name: "United Kingdom" },
+        { code: "IND", name: "India" }
+    ];
     const cc6_base_url = "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/";
     cc6_countries.forEach(country => {
-        const full_path = cc6_base_url + country + "_data.json";
+        const full_path = cc6_base_url + country.code + "_data.json";
         const spec = {
             "$schema": "https://vega.github.net/schema/vega-lite/v5.json",
-            "title": `GDP Growth: ${country}`,
+            // Use the NAME for the title (e.g., "GDP Growth: Germany")
+            "title": `GDP Growth: ${country.name}`,
             "width": "container",
             "height": 200,
             "data": { "url": full_path },
@@ -262,15 +269,15 @@
             "encoding": {
                 "x": { "field": "year", "type": "temporal", "title": "Year" },
                 "y": { "field": "value", "type": "quantitative", "title": "Growth %" },
-                "color": { "value": "steelblue" } // or any color from your theme
+                "color": { "value": "steelblue" }
             }
         };
-      
         const div = document.createElement('div');
-        div.id = `vis-${country}`;
+        div.id = `vis-${country.code}`;
         div.className = 'chart-card'; 
+      
         document.getElementById('w6-dashboard').appendChild(div);
-        vegaEmbed(`#vis-${country}`, spec).catch(console.error);
+        vegaEmbed(`#vis-${country.code}`, spec).catch(console.error);
     });
 
       // CC7 Charts 
