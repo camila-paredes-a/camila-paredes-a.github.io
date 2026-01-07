@@ -211,9 +211,16 @@
       <p>This chart examines household income residuals by quintile from 2006 to 2014, visualising deviations from predicted trends. It identifies which income groups performed above or below expectations.</p>
     </div>
     <figure id="w10chart1"></figure>
+    
     <div class="chart-description">
-
-      <p>Second visualisation for Week 10.</p>
+      <p>Hypothesis: Property size determines housing costs, larger homes command premium prices, affecting affordability for lower-income households.</p>
+      <p>Findings: Random Forest achieves R²=0.615. Area and bedrooms are strongest predictors. Model explains 61.5% of housing price variance.</p>
+      
+      <p>
+        <a href="https://colab.research.google.com/drive/1sE_5x2eQxu65PYbyVNrE5GGEuC5FtUbo?usp=sharing" target="_blank" style="font-weight: bold; color: #005f73;">
+            Google Colab ML notebook
+        </a>
+      </p>
     </div>
     <figure id="w10chart2"></figure>
   </section>
@@ -326,12 +333,12 @@
         .then(() => console.log("CC9 Chart 2 loaded"))
         .catch(console.error);
 
-      // CC10 Charts (placeholder)
+      // CC10 Charts
       vegaEmbed('#w10chart1', "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/reg_chart.json")
         .then(() => console.log("CC10 Chart 1 loaded"))
         .catch(console.error);
 
-      vegaEmbed('#w10chart2', "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/w10chart2.json")
+      vegaEmbed('#w10chart2', "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/ml_housing_feature_importance%20(1).json")
         .then(() => console.log("CC10 Chart 2 loaded"))
         .catch(console.error);
 
