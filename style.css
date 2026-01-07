@@ -1,7 +1,7 @@
 body {
     background-color: #ffffff; 
     color: #1a1a1a; 
-    font-family: "Nunito", "Work Sans", "Montserrat", "sans-serif";
+    font-family: "Outfit", "sans-serif";
     margin: 0;
     padding: 0;
     display: flex;
@@ -48,7 +48,7 @@ header nav a {
 
 header nav a:hover,
 header nav a.active {
-    color: #c41e3a; /* red accent from your red/blue palette */
+    color: #c41e3a; 
 }
 
 
