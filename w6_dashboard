@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CC6 Dashboard - GDP Growth</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif; /* Applied Outfit font here */
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 40px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        p.subtitle {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #666;
+        }
+
+        /* 3x2 grid */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 Columns */
+            gap: 30px; /* Space between charts */
+            max-width: 1200px;
+            margin: 0 auto; /* Center the grid on page */
+        }
+
+        .chart-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .chart-card:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
+        }
+
+        @media (max-width: 900px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Global GDP Growth (Annual %)</h1>
+    <p class="subtitle">
+        Automated Data Pipeline: World Bank API &rarr; Python Loop &rarr; GitHub &rarr; JS Dashboard
+    </p>
+
+    <div id="chart-grid" class="dashboard-grid"></div>
+
+    <script>
+        // 1. The List of Countries (Must match your file names)
+        const countries = ['USA', 'CHN', 'JPN', 'DEU', 'GBR', 'IND'];
+
+        // 2. The Base URL (Derived from your provided links)
+        const base_url = "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/";
+
+        // 3. The Loop
+        countries.forEach(country => {
+            
+            // Build the link
+            const full_path = base_url + country + "_data.json";
+
+            // Define the Vega-Lite Chart
+            const spec = {
+                "$schema": "https://vega.github.net/schema/vega-lite/v5.json",
+                "title": {
+                    "text": `GDP Growth: ${country}`,
+                    "font": "Outfit",
+                    "fontSize": 16
+                },
+                "width": "container", // Responsive width
+                "height": 200,
+                "data": { "url": full_path },
+                "mark": "line",
+                "encoding": {
+                    "x": {
+                        "field": "year", 
+                        "type": "temporal", 
+                        "title": "Year",
+                        "axis": {"labelFont": "Outfit", "titleFont": "Outfit"} 
+                    },
+                    "y": {
+                        "field": "value", 
+                        "type": "quantitative", 
+                        "title": "Growth %",
+                        "axis": {"labelFont": "Outfit", "titleFont": "Outfit"}
+                    },
+                    "color": {"value": "#005f73"}, // A nice teal color
+                    "tooltip": [
+                        {"field": "year", "type": "temporal", "format": "%Y"},
+                        {"field": "value", "type": "quantitative", "title": "Growth"}
+                    ]
+                },
+                "config": {
+                    "font": "Outfit" // Ensures Vega uses Outfit for legends/text
+                }
+            };
+
+            // Create the HTML div for this specific chart
+            const div = document.createElement('div');
+            div.id = `vis-${country}`;
+            div.className = 'chart-card'; // Apply the CSS card styling
+            
+            // Append the div to the main grid
+            document.getElementById('chart-grid').appendChild(div);
+
+            // Embed the chart
+            vegaEmbed(`#vis-${country}`, spec, {actions: false}).catch(console.error);
+        });
+    </script>
+
+</body>
+</html>
