@@ -13,8 +13,8 @@
     "subtitleFontWeight": 400,
     "subtitleColor": "#646464"
   },
-  "width": 700,
-  "height": 450,
+  "width": 500,
+  "height": 350,
   "data": {
     "url": "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c1_housing_spending.csv"
   },
@@ -139,8 +139,8 @@
     "legend": {"disable": false},
     "view": {
       "stroke": "transparent",
-      "continuousWidth": 700,
-      "continuousHeight": 450
+      "continuousWidth": 500,
+      "continuousHeight": 350
     }
   }
 }
