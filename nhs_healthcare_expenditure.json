@@ -2,8 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "title": {
     "text": "NHS Healthcare Expenditure (2003-2024)",
-    "fontSize": 21,
-    "font": "Proxima nova, sans-serif",
+    "fontSize": 18,
+    "font": "Outfit, sans-serif",
     "anchor": "start",
     "color": "#1F2A44",
     "subtitle": "Total current healthcare expenditure in billions"
@@ -65,7 +65,7 @@
   "height": 420,
   "config": {
     "view": {"stroke": null, "fill": "#ffffff"},
-    "font": "Proxima, sans-serif",
+    "font": "Outfit, sans-serif",
     "background": "white"
   }
 }
