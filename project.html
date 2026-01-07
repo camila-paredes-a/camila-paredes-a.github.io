@@ -18,187 +18,190 @@
 
 <body>
 
-  <header class="top-nav">
-    <div class="nav-left">
-      <h1 class="site-name">Camila Paredes</h1>
-    </div>
-    <div class="nav-right">
-      <nav>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="project.html" class="active">Project</a>
-        <a href="https://github.com/camila-paredes-a" target="_blank">GitHub</a>
-      </nav>
-    </div>
-  </header>
+<header class="top-nav">
+  <div class="nav-left">
+    <h1 class="site-name">Camila Paredes</h1>
+  </div>
+  <div class="nav-right">
+    <nav>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="project.html" class="active">Project</a>
+      <a href="https://github.com/camila-paredes-a" target="_blank">GitHub</a>
+    </nav>
+  </div>
+</header>
 
-  <main>
-    <!-- Project Title and Justification -->
-    <section>
-      <h2 class="page-title">Understanding the Impact of Income and Benefits on Family Wellbeing in the UK</h2>
-      <div class="chart-description">
-        <p>
-          This project explores how household income, housing costs, and social support programs affect disposable income for families with children.
-          It focuses on lower-middle income families and evaluates how parenthood shapes household budgets across income groups and regions from 2003 to 2024.
-          The analysis aims to identify patterns, highlight policy gaps, and provide insights for policymakers.
-        </p>
-      </div>
-    </section>
+<main>
 
-    <!-- CC1: Housing Costs -->
-    <section>
-      <div class="chart-description">
-        <h3>CC1. Housing Costs</h3>
-        <p>
-          We examine additional weekly housing costs incurred by households after having children. 
-          Chart 1 shows the difference between households with and without children, highlighting the financial impact of parenthood.
-        </p>
-      </div>
-      <figure id="c1chart"></figure>
-    </section>
+<!-- PROJECT TITLE & JUSTIFICATION -->
+<section>
+  <h2 class="page-title">
+    Income, Housing Costs, and Family Wellbeing in the UK
+  </h2>
 
-    <!-- CC2: Housing Affordability -->
-    <section>
-      <div class="chart-description">
-        <h3>CC2. Housing Affordability</h3>
-        <p>
-          This chart explores housing as a share of total household spending before and after parenthood. 
-          The data reveals how housing pressures disproportionately affect low-income households.
-        </p>
-      </div>
-      <figure id="c2chart"></figure>
-    </section>
+  <div class="chart-description">
+    <p>
+      This project analyses how income, housing costs, and family-related benefits interact to shape
+      the living standards of households with children in the UK. The analysis focuses on residual 
+      income after housing, a measure that reflects material wellbeing and financial resilience.
+    </p>
+    <p>
+      The project pays particular attention to lower-middle income families, who often earn
+      too much to qualify for full means-tested support but remain highly exposed to housing costs and
+      benefit withdrawal. By combining evidence on housing expenditure, affordability, residual income,
+      regional variation, and Child Benefit coverage, the project identifies a “squeeze of the middle”.
+    </p>
+  </div>
+</section>
 
-    <!-- CC3: Residual Income by Region -->
-    <section>
-      <div class="chart-description">
-        <h3>CC3. Residual Income by Region</h3>
-        <p>
-          After accounting for housing costs, residual income varies across regions and income quintiles. 
-          Chart 3 identifies regions where families are most financially stretched.
-        </p>
-      </div>
-      <figure id="c3chart"></figure>
-    </section>
+<!-- CC1 -->
+<section>
+  <div class="chart-description">
+    <p>
+      This chart quantifies the additional weekly housing costs faced by households after having
+      children, comparing families with and without children across the income distribution.
+      Parenthood is associated with systematically higher housing expenditure, reflecting the need
+      for larger dwellings, family-friendly locations, and more stable tenure.
+    </p>
+    <p>
+      From a policy perspective, this highlights that family formation itself acts as a cost shock.
+      Housing policy that fails to account for family size risks underestimating the true cost of
+      raising children, particularly in high-cost rental markets.
+    </p>
+  </div>
+  <figure id="c1chart"></figure>
+</section>
 
-    <!-- CC4: Residual Income After Housing (Fixed) -->
-    <section>
-      <div class="chart-description">
-        <h3>CC4. Residual Income After Housing</h3>
-        <p>
-          This chart illustrates that higher gross income does not always translate into higher disposable income for lower-middle income families (£300–£400/week). 
-          Housing costs and tapered benefits flatten net income growth. The red band highlights this income range, showing families with minimal net gain despite higher earnings.
-        </p>
-      </div>
-      <figure id="c4chart"></figure>
-    </section>
+<!-- CC2 -->
+<section>
+  <div class="chart-description">
+    <p>
+      This chart shows housing costs as a share of total household spending before and after having
+      children. Housing absorbs a larger proportion of the household budget for families, especially
+      at lower income levels.
+    </p>
+  </div>
+  <figure id="c2chart"></figure>
+</section>
 
-    <!-- CC5: Policy Gaps & Non-Claimants -->
-    <section>
-      <div class="chart-description">
-        <h3>CC5. Policy Gaps & Non-Claimants</h3>
-        <p>
-          Chart 4.1 focuses on families eligible but not claiming benefits, providing insights into gaps in policy coverage and awareness.
-        </p>
-      </div>
-      <figure id="c4-1chart"></figure>
-    </section>
+<!-- CC3 -->
+<section>
+  <div class="chart-description">
+    <p>
+      This chart examines how much income households retain after paying for housing. Residual income
+      varies sharply across income groups, revealing that gross earnings alone provide a misleading
+      picture of living standards.
+    </p>
+    <p>
+      For families with children, housing costs significantly compress disposable resources,
+      particularly among lower-middle income households.
+    </p>
+  </div>
+  <figure id="c3chart"></figure>
+</section>
 
-    <!-- CC6: Analytical Patterns -->
-    <section>
-      <div class="chart-description">
-        <h3>CC6. Analytical Patterns</h3>
-        <p>
-          Chart 5 visualises patterns across regions, income levels, housing costs, and Child Benefit uptake. 
-          This combined analysis helps identify correlations and policy-relevant trends.
-        </p>
-      </div>
-      <figure id="c5chart"></figure>
-    </section>
+<!-- CC4 -->
+<section>
+  <div class="chart-description">
+    <p>
+      This chart introduces regional variation into the analysis by comparing residual income after
+      housing across UK regions. By holding the income concept constant and allowing geography to vary,
+      the chart isolates the role of regional housing markets in shaping family wellbeing.
+    </p>
+    <p>
+      The results show that families with similar gross incomes can experience markedly different
+      living standards depending on where they live. Regions with higher housing costs consistently
+      exhibit lower residual income, even when earnings are comparable.
+    </p>
+    <p>
+      From a policy perspective, this highlights the limits of nationally uniform benefit levels.
+      When housing costs vary substantially across regions, flat-rate support fails to equalise living
+      standards, exposing families in high-cost areas to greater financial strain.
+    </p>
+  </div>
+  <figure id="c4chart"></figure>
+</section>
 
-    <!-- CC7: Family Size Distribution -->
-    <section>
-      <div class="chart-description">
-        <h3>CC7. Family Size Distribution</h3>
-        <p>
-          Chart 6 compares family size distribution for families claiming and not claiming Child Benefit. 
-          This analysis highlights whether larger families are more likely to access social support.
-        </p>
-      </div>
-      <figure id="c6chart"></figure>
-    </section>
+<!-- CC5 -->
+<section>
+  <div class="chart-description">
+    <p>
+      This chart examines the coverage of Child Benefit among families with children, focusing on who
+      receives support, evaluating policy reach. 
+    </p>
+    <p>
+      The data reveals that a non-trivial share of families who could benefit from support are either
+      partially covered or excluded altogether. These gaps are particularly relevant for lower-middle
+      income households, who may earn above eligibility thresholds for some programmes but still face
+      high housing costs.
+    </p>
+  </div>
+  <figure id="c5chart"></figure>
+</section>
 
-    <!-- CC8: Big Data Analysis -->
-    <section>
-      <div class="chart-description">
-        <h3>CC8. Big Data Analysis</h3>
-        <p>
-          Future coding challenges will explore housing stress over time using larger datasets and additional income and benefits data.
-        </p>
-      </div>
-      <figure id="c7chart"></figure>
-    </section>
+<!-- CC6 -->
+<section>
+  <div class="chart-description">
+    <p>
+      This final chart presents a regression-based analysis linking residual income after housing to
+      gross income, housing costs, and benefit receipt for families with children. This approach estimates 
+      which factors exert the strongest influence on household living standards.
+    </p>
+    <p>
+      The results indicate that housing costs have a large and persistent negative association with
+      residual income, while increases in gross income generate diminishing gains once benefits begin
+      to taper. For lower-middle income households, higher earnings do not translate proportionally
+      into improved living standards.
+    </p>
+  </div>
+  <figure id="c6chart"></figure>
+</section>
 
-    <!-- CC9: Interactive Visualisations -->
-    <section>
-      <div class="chart-description">
-        <h3>CC9. Interactive Visualisations</h3>
-        <p>
-          Interactive elements allow users to explore regional disparities and policy impacts in depth.
-        </p>
-      </div>
-      <figure id="c8chart"></figure>
-    </section>
 
-    <!-- CC10: Advanced Analysis & ML -->
-    <section>
-      <div class="chart-description">
-        <h3>CC10. Advanced Analysis & ML</h3>
-        <p>
-          Advanced visual analyses and machine learning techniques extend the project to predictive insights, exploring income, benefits, and residual income dynamics.
-        </p>
-      </div>
-      <figure id="c9chart"></figure>
-      <figure id="c10chart"></figure>
-    </section>
+<!-- Conclusion -->
+<section>
+  <div class="chart-description">
+    <h3>Conclusion</h3>
+    <p>
+      These graphs suggest that financial pressure among families with children in the UK is driven 
+      less by low earnings alone and more by the interaction between housing costs and welfare design. 
+      For lower-middle income households in particular, earning more does not necessarily translate into 
+      higher living standards, providing clear empirical evidence of the squeeze of the middle.
+    </p>
+    <p>
+      From a policy perspective, the results suggest that income-based support alone is insufficient.
+      Flat national benefits and sharp eligibility thresholds fail to reflect regional housing
+      pressures and leave many families exposed. More effective policy responses would require better
+      coordination between housing and welfare systems, including housing-cost-adjusted benefits or
+      targeted support for families just above traditional eligibility cut-offs.
+    </p>
+  </div>
+</section>
 
-    <!-- Conclusion -->
-    <section>
-      <div class="chart-description">
-        <h3>Conclusion</h3>
-        <p>
-          The analysis shows that for lower-middle income families, higher gross income does not always lead to higher disposable income due to housing costs and benefit tapering. 
-          Policy levers strongly shape household wellbeing, highlighting the need for targeted interventions to support financially stretched families.
-        </p>
-      </div>
-    </section>
-  </main>
 
-  <script>
-    // Chart URLs
-    const charts = [
-      {id: '#c1chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c1_final.json'},
-      {id: '#c2chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c2.json'},
-      {id: '#c3chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c3.json'},
-      // CC4: embedded as fixed Vega-Lite object
-      {id: '#c4chart', url: 'fixed'}, 
-      {id: '#c4-1chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c4.1.json'},
-      {id: '#c5chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c5_analytical.json'},
-      {id: '#c6chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c6_histogram.json'},
-      {id: '#c7chart', url: ''},
-      {id: '#c8chart', url: ''},
-      {id: '#c9chart', url: ''},
-      {id: '#c10chart', url: ''}
-    ];
+</main>
 
-    charts.forEach(c => {
-      if(c.url && c.url !== 'fixed') {
-        vegaEmbed(c.id, c.url, {renderer: 'svg', width: 650, height: 350, autosize: {type: "fit", contains: "padding"}})
-        .then(() => console.log(`${c.id} loaded`))
-        .catch(console.error);
-      }
-    });
+<script>
+  const charts = [
+    {id: '#c1chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c1_final.json'},
+    {id: '#c2chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c2.json'},
+    {id: '#c3chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c3.json'},
+    {id: '#c4chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c3.1.json'},
+    {id: '#c5chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c4.1.json '},
+    {id: '#c6chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/reg_chart.json'}
+  ];
 
-  </script>
+  charts.forEach(c => {
+    if(c.url && c.url !== 'fixed') {
+      vegaEmbed(c.id, c.url, {
+        renderer: 'svg',
+        width: 650,
+        height: 350,
+        autosize: {type: "fit", contains: "padding"}
+      }).catch(console.error);
+    }
+  });
+</script>
 
 </body>
 </html>
