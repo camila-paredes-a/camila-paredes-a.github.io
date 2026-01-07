@@ -1,0 +1,8 @@
+Quintile,Quintile_short,Median_disposable_income,Est_housing_cost,Est_residual_after_housing,Residual_as_pct_of_income,CB_as_pct_of_residual
+"Q1
+(Poorest)",Q1,14066,3517,10549,75.0,16.1
+Q2,Q2,19511,4878,14633,75.0,11.6
+Q3,Q3,25963,6491,19472,75.0,8.7
+Q4,Q4,35397,8849,26548,75.0,6.4
+"Q5
+(Richest)",Q5,54141,13535,40606,75.0,4.2
