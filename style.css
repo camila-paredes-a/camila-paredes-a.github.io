@@ -1,7 +1,7 @@
 body {
-    background-color: #ffffff; /* pure white */
-    color: #1a1a1a; /* dark grey for text */
-    font-family: "Proxima Nova", "Proxima", sans-serif;
+    background-color: #ffffff; 
+    color: #1a1a1a; 
+    font-family: "Poppins", "Proxima", "Helvetica", "sans-serif";
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,6 +11,9 @@ body {
     min-height: 100vh;
 }
 
+h1, h2, h3, h4, h5 {
+    letter-spacing: 0.5px;
+}
 
 header.top-nav {
     width: 100%;
@@ -59,8 +62,12 @@ header nav a.active {
 section {
     width: 90%;
     max-width: 900px;
-    margin: 40px 0;
     text-align: center;
+    margin: 60px 0 40px 0; 
+}
+
+section p {
+    line-height: 1.6;
 }
 
 .chart-description h3 {
@@ -77,22 +84,28 @@ section {
 
 figure {
     width: 90%;
+    max-width: 800px;  /* ensures charts don’t grow too large on big screens */
     margin: 0 auto 40px auto;
 }
 
-
+figure > div {
+    width: 100% !important;
+    max-width: 800px !important;
+    margin: 0 auto;
+}
 
 @media (max-width: 768px) {
-    header.top-nav {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 15px 30px;
-    }
+    h1 { font-size: 1.6rem; }
+    h2 { font-size: 1.4rem; }
+    h3 { font-size: 1.2rem; }
+}
 
-    header nav {
-        gap: 15px;
-        margin-top: 10px;
-    }
+    header nav a:hover {
+    color: #c41e3a;
+    border-bottom: 2px solid #c41e3a;
+    padding-bottom: 2px;
+    transition: all 0.3s ease;
+}
 
     .page-title {
         font-size: 1.6rem;
