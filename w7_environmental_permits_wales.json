@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "Environmental Permits in Wales",
+    "subtitle": [
+      "Bubble size indicates permit density per facility. Installation permits regulate industry, waste permits manage recycling."
+    ],
+    "fontSize": 25,
+    "font": "Proxima, sans-serif",
+    "fontWeight": "bold",
+    "color": "#1a2a3a",
+    "subtitleFontSize": 14,
+    "subtitleFont": "Proxima, sans-serif",
+    "subtitleFontWeight": "normal",
+    "subtitleColor": "#4a5a6a",
+    "anchor": "start"
+  },
+  "width": 700,
+  "height": 750,
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/MappingWorkshop/geo_data/wales.topojson",
+        "format": {"type": "topojson", "feature": "data"}
+      },
+      "projection": {"type": "mercator"},
+      "mark": {
+        "type": "geoshape",
+        "fill": "#e0e4e2",
+        "stroke": "#dde0df",
+        "strokeWidth": 1
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/nrw_permits_by_site.csv"
+      },
+      "projection": {"type": "mercator"},
+      "mark": {
+        "type": "circle",
+        "opacity": 0.75,
+        "stroke": "white",
+        "strokeWidth": 0.3
+      },
+      "encoding": {
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"},
+        "color": {
+          "field": "permit_regime",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Installation", "Waste"],
+            "range": ["#2e86ab", "#ff7f0e"]
+          },
+          "title": "Permit type"
+        },
+        "size": {
+          "field": "permit_count",
+          "type": "quantitative",
+          "scale": {"type": "sqrt", "range": [50, 700]},
+          "title": "Permits per site"
+        },
+        "tooltip": [
+          {"field": "site_name", "type": "nominal", "title": "Site"},
+          {"field": "permit_regime", "type": "nominal", "title": "Type"},
+          {"field": "town", "type": "nominal", "title": "Town"},
+          {"field": "county", "type": "nominal", "title": "County"},
+          {
+            "field": "permit_count",
+            "type": "quantitative",
+            "title": "Number of Permits"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {}
+}

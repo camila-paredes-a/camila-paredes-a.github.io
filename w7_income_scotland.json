@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "Gross Domestic Household Income (GDHI) by Local Authority in Scotland",
+    "subtitle": "Total household income across all residents by Local Authority in 2022, £ millions",
+    "fontSize": 18,
+    "font": "Proxima, sans-serif",
+    "anchor": "start",
+    "color": "#1a1a1a"
+  },
+  "width": 700,
+  "height": 600,
+  "background": "#fffff",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/MappingWorkshop/geo_data/LAD_SCT_2025_05.topojson",
+    "format": {"type": "topojson", "feature": "object_name"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.LAD25CD",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/scotland_hincome.csv"
+        },
+        "key": "LAD code",
+        "fields": ["2022"]
+      }
+    }
+  ],
+  "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.5},
+  "encoding": {
+    "color": {
+      "field": "2022",
+      "type": "quantitative",
+      "scale": {"scheme": "greenblue"},
+      "title": "GDHI (£m)",
+      "legend": {
+        "values": [2000, 4000, 6000, 8000, 10000, 12000],
+        "format": ",.0f",
+        "labelOverlap": false
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.LAD25NM",
+        "type": "nominal",
+        "title": "Local Authority"
+      },
+      {
+        "field": "2022",
+        "type": "quantitative",
+        "title": "GDHI (£m)",
+        "format": ",.0f"
+      }
+    ]
+  },
+  "projection": {"type": "mercator"},
+  "config": {
+    "view": {"stroke": null, "fill": "#faf9f7"},
+    "font": "Proxima, sans-serif",
+    "background": "#faf9f7"
+  }
+}
