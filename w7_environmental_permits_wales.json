@@ -5,18 +5,18 @@
     "subtitle": [
       "Bubble size indicates permit density per facility. Installation permits regulate industry, waste permits manage recycling."
     ],
-    "fontSize": 25,
-    "font": "Proxima, sans-serif",
+    "fontSize": 18,
+    "font": "Outfit, sans-serif",
     "fontWeight": "bold",
     "color": "#1a2a3a",
-    "subtitleFontSize": 14,
-    "subtitleFont": "Proxima, sans-serif",
+    "subtitleFontSize": 13,
+    "subtitleFont": "Outfit, sans-serif",
     "subtitleFontWeight": "normal",
     "subtitleColor": "#4a5a6a",
     "anchor": "start"
   },
-  "width": 700,
-  "height": 750,
+  "width": 500,
+  "height": 350,
   "layer": [
     {
       "data": {
