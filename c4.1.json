@@ -6,16 +6,16 @@
       "Families receiving Child Benefit across countries and regions (2003–2024)",
       "Source: HMRC administrative data"
     ],
-    "fontSize": 24,
-    "font": "Proxima, sans-serif",
+    "fontSize": 18,
+    "font": "Outfit, sans-serif",
     "fontWeight": 700,
     "color": "#4b4a4a",
-    "subtitleFontSize": 15,
+    "subtitleFontSize": 13,
     "subtitleFontWeight": 400,
     "subtitleColor": "#646464"
   },
-  "width": 700,
-  "height": 400,
+  "width": 500,
+  "height": 350,
   "data": {
     "url": "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/final_uk_regions.csv"
   },
@@ -66,7 +66,7 @@
       "type": "quantitative",
       "axis": {
         "title": "Recipient families per region and country",
-        "titleFontSize": 13,
+        "titleFontSize": 12,
         "titleFontWeight": 700,
         "titleColor": "#666666",
         "titleAnchor": "start",
@@ -81,8 +81,8 @@
         "labelPadding": 8,
         "ticks": false,
         "offset": 10,
-        "labelFont": "Inter, sans-serif",
-        "labelFontSize": 13,
+        "labelFont": "Outfit, sans-serif",
+        "labelFontSize": 12,
         "labelColor": "#666666",
         "format": ",.0f"
       }
@@ -106,10 +106,10 @@
   },
   "config": {
     "background": "#ffffff",
-    "font": "Inter, sans-serif",
+    "font": "Outfit, sans-serif",
     "title": {
-      "font": "Inter, sans-serif",
-      "fontSize": 26,
+      "font": "Outfit, sans-serif",
+      "fontSize": 18,
       "fontWeight": 600,
       "color": "#1a1a1a",
       "anchor": "start",
@@ -119,10 +119,10 @@
       "subtitleColor": "#999999"
     },
     "axis": {
-      "labelFont": "Proxima, sans-serif",
+      "labelFont": "Outfit, sans-serif",
       "labelFontSize": 13,
       "labelColor": "#666666",
-      "titleFont": "Proxima, sans-serif",
+      "titleFont": "Outfit, sans-serif",
       "titleFontSize": 13,
       "titleFontWeight": 500,
       "titleColor": "#666666",
@@ -138,8 +138,8 @@
     "legend": {"disable": false},
     "view": {
       "stroke": "transparent",
-      "continuousWidth": 700,
-      "continuousHeight": 400
+      "continuousWidth": 500,
+      "continuousHeight": 350
     }
   }
 }
