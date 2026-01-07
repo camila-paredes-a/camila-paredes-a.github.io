@@ -10,8 +10,8 @@
     "fontWeight": "bold",
     "color": "#1a2a3a"
   },
-  "width": 450,
-  "height": 200,
+  "width": 500,
+  "height": 350,
   "padding": 20,
   "background": "#ffffff",
   "data": {
@@ -66,15 +66,15 @@
     "font": "Outfit, sans-serif",
     "title": {"fontSize": 18, "anchor": "start", "offset": 15},
     "axis": {
-      "labelFontSize": 10,
-      "titleFontSize": 10,
+      "labelFontSize": 12,
+      "titleFontSize": 12,
       "titleColor": "#4a5a6a",
       "grid": true,
       "gridOpacity": 0.45
     },
     "legend": {
-      "labelFontSize": 10,
-      "titleFontSize": 10,
+      "labelFontSize": 12,
+      "titleFontSize": 12,
       "orient": "right",
       "padding": 15,
       "fillColor": "#ffffff",
