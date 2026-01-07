@@ -1,0 +1,145 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "Child Benefit Coverage in the UK",
+    "subtitle": [
+      "Families receiving Child Benefit across countries and regions (2003–2024)",
+      "Source: HMRC administrative data"
+    ],
+    "fontSize": 24,
+    "font": "Proxima, sans-serif",
+    "fontWeight": 700,
+    "color": "#4b4a4a",
+    "subtitleFontSize": 15,
+    "subtitleFontWeight": 400,
+    "subtitleColor": "#646464"
+  },
+  "width": 700,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/final_uk_regions.csv"
+  },
+  "params": [
+    {
+      "name": "selected_year",
+      "value": 2024,
+      "bind": {
+        "input": "range",
+        "min": 2003,
+        "max": 2024,
+        "step": 1,
+        "name": "Year:  "
+      }
+    }
+  ],
+  "transform": [{"filter": "datum.year == selected_year"}],
+  "mark": {
+    "type": "bar",
+    "stroke": "transparent",
+    "strokeWidth": 0,
+    "opacity": 0.8,
+    "cornerRadius": 2,
+    "color": "darkblue"
+  },
+  "encoding": {
+    "y": {
+      "field": "region",
+      "type": "ordinal",
+      "axis": {
+        "title": null,
+        "titleFontWeight": 700,
+        "titleFontSize": 12,
+        "domainColor": "#d0d0d0",
+        "domainWidth": 1.5,
+        "labelPadding": 12,
+        "ticks": false,
+        "labelAngle": 0,
+        "offset": 0,
+        "labelFont": "Inter, sans-serif",
+        "labelFontSize": 13,
+        "labelColor": "#666666"
+      },
+      "sort": "-x"
+    },
+    "x": {
+      "field": "families",
+      "type": "quantitative",
+      "axis": {
+        "title": "Recipient families per region and country",
+        "titleFontSize": 13,
+        "titleFontWeight": 700,
+        "titleColor": "#666666",
+        "titleAnchor": "start",
+        "titleAngle": 0,
+        "titleX": 0,
+        "titleY": -425,
+        "domainColor": "#d0d0d0",
+        "domainWidth": 1.5,
+        "gridColor": "#e8e8e8",
+        "gridOpacity": 1,
+        "gridDash": [3, 3],
+        "labelPadding": 8,
+        "ticks": false,
+        "offset": 10,
+        "labelFont": "Inter, sans-serif",
+        "labelFontSize": 13,
+        "labelColor": "#666666",
+        "format": ",.0f"
+      }
+    },
+    "tooltip": [
+      {"field": "region", "type": "nominal", "title": "Region"},
+      {"field": "year", "type": "ordinal", "title": "Year"},
+      {
+        "field": "families",
+        "type": "quantitative",
+        "title": "Families",
+        "format": ",.0f"
+      },
+      {
+        "field": "children",
+        "type": "quantitative",
+        "title": "Children",
+        "format": ",.0f"
+      }
+    ]
+  },
+  "config": {
+    "background": "#ffffff",
+    "font": "Inter, sans-serif",
+    "title": {
+      "font": "Inter, sans-serif",
+      "fontSize": 26,
+      "fontWeight": 600,
+      "color": "#1a1a1a",
+      "anchor": "start",
+      "offset": 25,
+      "subtitleFontSize": 13,
+      "subtitleFontWeight": 400,
+      "subtitleColor": "#999999"
+    },
+    "axis": {
+      "labelFont": "Proxima, sans-serif",
+      "labelFontSize": 13,
+      "labelColor": "#666666",
+      "titleFont": "Proxima, sans-serif",
+      "titleFontSize": 13,
+      "titleFontWeight": 500,
+      "titleColor": "#666666",
+      "domainColor": "#d0d0d0",
+      "domainWidth": 1,
+      "gridColor": "#e8e8e8",
+      "gridOpacity": 1,
+      "gridDash": [3, 3],
+      "labelPadding": 10,
+      "ticks": false,
+      "offset": 5
+    },
+    "legend": {"disable": false},
+    "view": {
+      "stroke": "transparent",
+      "continuousWidth": 700,
+      "continuousHeight": 400
+    }
+  }
+}
