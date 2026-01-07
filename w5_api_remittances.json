@@ -5,13 +5,13 @@
     "subtitle": [
       "Personal remittances received in India, Mexico, and Philippines | Source: World Bank API"
     ],
-    "fontSize": 22,
-    "font": "Proxima, sans-serif",
+    "fontSize": 18,
+    "font": "Outfit, sans-serif",
     "fontWeight": "bold",
     "color": "#1a2a3a"
   },
-  "width": 700,
-  "height": 450,
+  "width": 450,
+  "height": 200,
   "padding": 20,
   "background": "#ffffff",
   "data": {
@@ -63,18 +63,18 @@
     ]
   },
   "config": {
-    "font": "Proxima, sans-serif",
-    "title": {"fontSize": 22, "anchor": "start", "offset": 15},
+    "font": "Outfit, sans-serif",
+    "title": {"fontSize": 18, "anchor": "start", "offset": 15},
     "axis": {
-      "labelFontSize": 11,
-      "titleFontSize": 11.5,
+      "labelFontSize": 10,
+      "titleFontSize": 10,
       "titleColor": "#4a5a6a",
       "grid": true,
       "gridOpacity": 0.45
     },
     "legend": {
-      "labelFontSize": 12,
-      "titleFontSize": 13,
+      "labelFontSize": 10,
+      "titleFontSize": 10,
       "orient": "right",
       "padding": 15,
       "fillColor": "#ffffff",
