@@ -1,0 +1,146 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "Additional weekly housing costs associated with parenthood",
+    "subtitle": [
+      "Difference in average weekly housing expenditure between households with and without children",
+      "Source: ONS Living Costs and Food Survey 2022-2024"
+    ],
+    "fontSize": 24,
+    "fontWeight": 700,
+    "color": "#4b4a4a",
+    "subtitleFontSize": 15,
+    "subtitleFontWeight": 400,
+    "subtitleColor": "#646464"
+  },
+  "width": 750,
+  "height": 420,
+  "data": {
+    "url": "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c1_housing_spending.csv"
+  },
+  "mark": {
+    "type": "bar",
+    "stroke": "transparent",
+    "strokeWidth": 0,
+    "opacity": 1,
+    "cornerRadius": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "Income quintile",
+      "type": "ordinal",
+      "sort": ["Q1", "Q2", "Q3", "Q4", "Q5"],
+      "axis": {
+        "title": "Income quintile",
+        "titleFontWeight": 700,
+        "titleFontSize": 12,
+        "domainColor": "#d0d0d0",
+        "domainWidth": 1.5,
+        "labelPadding": 12,
+        "ticks": false,
+        "labelAngle": 0,
+        "offset": 0
+      }
+    },
+    "y": {
+      "field": "Housing shock (pounds)",
+      "type": "quantitative",
+      "axis": {
+        "title": "Weekly Cost Increase (£)",
+        "titleFontSize": 12,
+        "titleFontWeight": 700,
+        "titleColor": "#666666",
+        "titleAnchor": "start",
+        "titleAngle": 0,
+        "titleX": 0,
+        "titleY": -15,
+        "domainColor": "#d0d0d0",
+        "domainWidth": 1.5,
+        "gridColor": "#e8e8e8",
+        "gridOpacity": 1,
+        "gridDash": [3, 3],
+        "labelPadding": 8,
+        "ticks": false,
+        "offset": 10
+      }
+    },
+    "color": {
+      "field": "Housing shock (pounds)",
+      "type": "quantitative",
+      "scale": {"scheme": "redblue", "reverse": true, "domainMid": 0},
+      "legend": {
+        "title": "Cost Increase (£)",
+        "titleFontSize": 13,
+        "titleFontWeight": 700,
+        "labelFontSize": 12,
+        "titleColor": "#666666",
+        "labelColor": "#666666",
+        "orient": "right",
+        "offset": 20
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Income quintile",
+        "type": "nominal",
+        "title": "Income Quintile"
+      },
+      {
+        "field": "Housing with children (week)",
+        "type": "quantitative",
+        "format": ".1f",
+        "title": "Housing cost with children (£/week)"
+      },
+      {
+        "field": "Housing without children (week)",
+        "type": "quantitative",
+        "format": ".1f",
+        "title": "Housing cost without children (£/week)"
+      },
+      {
+        "field": "Housing shock (pounds)",
+        "type": "quantitative",
+        "format": ".1f",
+        "title": "Housing cost increase (£/week)"
+      }
+    ]
+  },
+  "config": {
+    "background": "#ffffff",
+    "font": "Inter, sans-serif",
+    "title": {
+      "font": "Inter, sans-serif",
+      "fontSize": 26,
+      "fontWeight": 600,
+      "color": "#1a1a1a",
+      "anchor": "start",
+      "offset": 25,
+      "subtitleFontSize": 13,
+      "subtitleFontWeight": 400,
+      "subtitleColor": "#999999"
+    },
+    "axis": {
+      "labelFont": "Inter, sans-serif",
+      "labelFontSize": 13,
+      "labelColor": "#666666",
+      "titleFont": "Inter, sans-serif",
+      "titleFontSize": 13,
+      "titleFontWeight": 500,
+      "titleColor": "#666666",
+      "domainColor": "#d0d0d0",
+      "domainWidth": 1,
+      "gridColor": "#e8e8e8",
+      "gridOpacity": 1,
+      "gridDash": [3, 3],
+      "labelPadding": 10,
+      "ticks": false,
+      "offset": 5
+    },
+    "legend": {"disable": false},
+    "view": {
+      "stroke": "transparent",
+      "continuousWidth": 750,
+      "continuousHeight": 420
+    }
+  }
+}
