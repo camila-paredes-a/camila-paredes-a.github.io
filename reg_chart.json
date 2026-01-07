@@ -1,0 +1,129 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "Household Income Residuals by Quintile",
+    "subtitle": [
+      "Deviation from predicted income trend (2006/07-2013/14). Positive: income is above expected, Negative: income below expected",
+      "Source: ONS analysis of non-retired households with children"
+    ],
+    "fontSize": 18,
+    "fontWeight": 700,
+    "color": "#4b4a4a",
+    "subtitleFontSize": 13,
+    "subtitleFontWeight": 400,
+    "subtitleColor": "#666666"
+  },
+  "width": 500,
+  "height": 350,
+  "data": {
+    "url": "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/main/regression_detailed.csv"
+  },
+  "mark": {"type": "bar", "size": 20},
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "sort": [
+        "2006/07",
+        "2007/08",
+        "2008/09",
+        "2009/10",
+        "2010/11",
+        "2011/12",
+        "2012/13",
+        "2013/14"
+      ],
+      "axis": {
+        "title": "Fiscal year",
+        "titleFontSize": 11,
+        "titleFontWeight": 700,
+        "titleColor": "#666666",
+        "labelFontSize": 11,
+        "labelColor": "#666666",
+        "domainColor": "#d0d0d0",
+        "domainWidth": 1.5,
+        "ticks": false,
+        "labelFont": "Inter, sans-serif",
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "Residual",
+      "type": "quantitative",
+      "axis": {
+        "title": "Residual (£) - Deviation from Trend",
+        "titleFontSize": 11,
+        "titleFontWeight": 700,
+        "titleColor": "#666666",
+        "labelFontSize": 11,
+        "labelColor": "#666666",
+        "domainColor": "#d0d0d0",
+        "domainWidth": 1.5,
+        "gridColor": "#e8e8e8",
+        "gridOpacity": 0.3,
+        "gridDash": [3, 3],
+        "ticks": false,
+        "format": ".0f",
+        "labelFont": "Inter, sans-serif"
+      }
+    },
+    "color": {
+      "field": "Residual",
+      "type": "quantitative",
+      "scale": {"scheme": "redblue", "domainMid": 0},
+      "title": "Residual (£)",
+      "legend": {
+        "titleFontSize": 12,
+        "titleFontWeight": 700,
+        "titleColor": "#666666",
+        "labelFontSize": 11,
+        "labelColor": "#666666",
+        "orient": "right",
+        "offset": 20
+      }
+    },
+    "xOffset": {"field": "Quintile"},
+    "tooltip": [
+      {"field": "Year", "type": "ordinal", "title": "Year"},
+      {"field": "Quintile", "type": "nominal", "title": "Quintile"},
+      {
+        "field": "Actual_income",
+        "type": "quantitative",
+        "title": "Actual Income",
+        "format": ".0f"
+      },
+      {
+        "field": "Fitted_income",
+        "type": "quantitative",
+        "title": "Trend (fitted)",
+        "format": ".0f"
+      },
+      {
+        "field": "Residual",
+        "type": "quantitative",
+        "title": "Residual",
+        "format": ".0f"
+      }
+    ]
+  },
+  "config": {
+    "background": "#ffffff",
+    "font": "Outfit, sans-serif",
+    "title": {
+      "font": "Outfit, sans-serif",
+      "fontSize": 18,
+      "fontWeight": 600,
+      "color": "#1a1a1a",
+      "anchor": "start",
+      "offset": 25,
+      "subtitleFontSize": 13,
+      "subtitleFontWeight": 400,
+      "subtitleColor": "#999999"
+    },
+    "view": {
+      "stroke": "transparent",
+      "continuousWidth": 500,
+      "continuousHeight": 350
+    }
+  }
+}
