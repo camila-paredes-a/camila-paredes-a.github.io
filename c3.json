@@ -1,0 +1,129 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "What households have left after paying for housing",
+    "subtitle": [
+      "Annual residual disposable income after housing costs, by region (£)",
+      "Source: ONS GDHI 2023, Living Costs and Food Survey 2024"
+    ],
+    "fontSize": 24,
+    "fontWeight": 700,
+    "color": "#4b4a4a",
+    "subtitleFontSize": 15,
+    "subtitleFontWeight": 400,
+    "subtitleColor": "#646464"
+  },
+  "width": 700,
+  "height": 450,
+  "data": {
+    "url": "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c3_residual_income_data.csv"
+  },
+  "mark": {"type": "bar", "cornerRadius": 2},
+  "encoding": {
+    "y": {
+      "field": "Region",
+      "type": "ordinal",
+      "sort": [
+        "London",
+        "South East",
+        "East",
+        "South West",
+        "North West",
+        "East Midlands",
+        "Yorkshire and The Humber",
+        "West Midlands",
+        "North East"
+      ],
+      "axis": {
+        "title": "Region",
+        "titleFontWeight": 700,
+        "titleFontSize": 12,
+        "labelFontSize": 13,
+        "labelColor": "#666666",
+        "domainColor": "#d0d0d0",
+        "domainWidth": 1.5,
+        "labelPadding": 10,
+        "ticks": false
+      }
+    },
+    "x": {
+      "field": "Residual_income",
+      "type": "quantitative",
+      "axis": {
+        "title": "Annual residual income after housing (£)",
+        "titleFontWeight": 700,
+        "titleFontSize": 12,
+        "titleColor": "#666666",
+        "labelFontSize": 13,
+        "labelColor": "#666666",
+        "domainColor": "#d0d0d0",
+        "domainWidth": 1.5,
+        "gridColor": "#e8e8e8",
+        "gridOpacity": 1,
+        "gridDash": [3, 3],
+        "ticks": false
+      }
+    },
+    "color": {
+      "field": "Residual_income",
+      "type": "quantitative",
+      "scale": {"scheme": "redblue", "reverse": true, "domainMid": 22000},
+      "legend": {
+        "title": "Residual income (£)",
+        "titleFontSize": 13,
+        "titleFontWeight": 700,
+        "labelFontSize": 12,
+        "titleColor": "#666666",
+        "labelColor": "#666666",
+        "orient": "right",
+        "offset": 15
+      }
+    },
+    "tooltip": [
+      {"field": "Region", "type": "nominal", "title": "Region"},
+      {
+        "field": "Residual_income",
+        "type": "quantitative",
+        "format": ",.0f",
+        "title": "Residual income (£/year)"
+      },
+      {
+        "field": "Housing_pct_of_income",
+        "type": "quantitative",
+        "format": ".1f",
+        "title": "Housing as % of income"
+      }
+    ]
+  },
+  "config": {
+    "background": "#ffffff",
+    "font": "Inter, sans-serif",
+    "title": {
+      "font": "Inter, sans-serif",
+      "fontSize": 26,
+      "fontWeight": 600,
+      "color": "#1a1a1a",
+      "anchor": "start",
+      "offset": 20,
+      "subtitleFontSize": 13,
+      "subtitleFontWeight": 400,
+      "subtitleColor": "#999999"
+    },
+    "axis": {
+      "labelFont": "Inter, sans-serif",
+      "labelFontSize": 13,
+      "labelColor": "#666666",
+      "titleFont": "Inter, sans-serif",
+      "titleFontSize": 13,
+      "titleFontWeight": 500,
+      "titleColor": "#666666",
+      "domainColor": "#d0d0d0",
+      "domainWidth": 1,
+      "gridColor": "#e8e8e8",
+      "gridOpacity": 1,
+      "gridDash": [3, 3],
+      "ticks": false
+    },
+    "view": {"stroke": "transparent"}
+  }
+}

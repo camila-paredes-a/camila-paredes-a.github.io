@@ -1,0 +1,129 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "Regional income differences across the UK",
+    "subtitle": [
+      "Gross Disposable Household Income (GDHI) per head (2013–2023)",
+      "Source: ONS, Regional GDHI"
+    ],
+    "fontSize": 24,
+    "fontWeight": 700,
+    "color": "#4b4a4a",
+    "subtitleFontSize": 15,
+    "subtitleFontWeight": 400,
+    "subtitleColor": "#646464"
+  },
+  "width": 700,
+  "height": 550,
+  "projection": {"type": "mercator", "reflectY": false},
+  "data": {
+    "url": "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c3_1_itl2_gdhi_long.csv"
+  },
+  "params": [
+    {
+      "name": "selected_year",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 2013,
+        "max": 2022,
+        "step": 1,
+        "name": "Year:  "
+      }
+    },
+    {
+      "name": "zoom_location",
+      "value": "UK",
+      "bind": {
+        "input": "select",
+        "options": ["UK", "London"],
+        "name": "View:  "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "zoom_location === 'UK' || test(/London/, datum.region_name)"},
+    {
+      "lookup": "itl2_code",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/ITL2_JAN_2025_UK_BUC_4480475290667930296.geojson",
+          "format": {"type": "json", "property": "features"}
+        },
+        "key": "properties.ITL225CD"
+      },
+      "as": "geo"
+    },
+    {"filter": "datum.year == selected_year"}
+  ],
+  "mark": {"type": "geoshape", "stroke": "#ffffff", "strokeWidth": 0.5},
+  "encoding": {
+    "shape": {"field": "geo", "type": "geojson"},
+    "color": {
+      "field": "gdhi_per_head",
+      "type": "quantitative",
+      "scale": {"scheme": "blueorange", "domain": [10000, 65000]},
+      "title": "GDHI per Head (£)",
+      "legend": {
+        "titleFontSize": 13,
+        "titleFontWeight": 700,
+        "labelFontSize": 12,
+        "titleColor": "#666666",
+        "labelColor": "#666666",
+        "orient": "right",
+        "offset": 20
+      }
+    },
+    "tooltip": [
+      {"field": "region_name", "type": "nominal", "title": "Region"},
+      {"field": "year", "type": "ordinal", "title": "Year"},
+      {
+        "field": "gdhi_per_head",
+        "type": "quantitative",
+        "title": "GDHI per Head (£)",
+        "format": ",.0f"
+      }
+    ]
+  },
+  "config": {
+    "background": "#ffffff",
+    "font": "Inter, sans-serif",
+    "title": {
+      "font": "Inter, sans-serif",
+      "fontSize": 24,
+      "fontWeight": 700,
+      "color": "#4b4a4a",
+      "anchor": "start",
+      "offset": 25,
+      "subtitleFontSize": 15,
+      "subtitleFontWeight": 400,
+      "subtitleColor": "#646464"
+    },
+    "axis": {
+      "labelFont": "Inter, sans-serif",
+      "labelFontSize": 13,
+      "labelColor": "#666666",
+      "titleFont": "Inter, sans-serif",
+      "titleFontSize": 13,
+      "titleFontWeight": 700,
+      "titleColor": "#666666",
+      "domainColor": "#d0d0d0",
+      "domainWidth": 1.5,
+      "gridColor": "#e8e8e8",
+      "gridOpacity": 1,
+      "gridDash": [3, 3],
+      "labelPadding": 10,
+      "ticks": false,
+      "offset": 5
+    },
+    "legend": {
+      "labelFont": "Inter, sans-serif",
+      "titleFont": "Inter, sans-serif"
+    },
+    "view": {
+      "stroke": "transparent",
+      "continuousWidth": 700,
+      "continuousHeight": 550
+    }
+  }
+}
