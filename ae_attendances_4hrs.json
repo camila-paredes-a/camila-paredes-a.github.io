@@ -2,8 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "title": {
     "text": "A&E Attendances exceeding 4 hours",
-    "fontSize": 21,
-    "font": "Proxima nova, sans-serif",
+    "fontSize": 18,
+    "font": "Outfit nova, sans-serif",
     "anchor": "start",
     "color": "#1F2A44",
     "subtitle": "From arrival to admission, transfer or discharge (2003-2024)"
@@ -11,8 +11,8 @@
   "data": {
     "url": "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/waiting_times_p.csv"
   },
-  "width": 750,
-  "height": 420,
+  "width": 500,
+  "height": 350,
   "encoding": {
     "x": {
       "field": "Year",
@@ -76,7 +76,7 @@
   ],
   "config": {
     "view": {"stroke": null, "fill": "#ffffff"},
-    "font": "Proxima, sans-serif",
+    "font": "Outfit, sans-serif",
     "background": "white"
   }
 }
