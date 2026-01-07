@@ -4,13 +4,13 @@
     "text": "Gross Domestic Household Income (GDHI) by Local Authority in Scotland",
     "subtitle": "Total household income across all residents by Local Authority in 2022, £ millions",
     "fontSize": 18,
-    "font": "Proxima, sans-serif",
+    "font": "Outfit, sans-serif",
     "anchor": "start",
     "color": "#1a1a1a"
   },
   "width": 700,
-  "height": 600,
-  "background": "#fffff",
+  "height": 550,
+  "background": "#ffffff",
   "data": {
     "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/MappingWorkshop/geo_data/LAD_SCT_2025_05.topojson",
     "format": {"type": "topojson", "feature": "object_name"}
@@ -56,8 +56,8 @@
   },
   "projection": {"type": "mercator"},
   "config": {
-    "view": {"stroke": null, "fill": "#faf9f7"},
-    "font": "Proxima, sans-serif",
-    "background": "#faf9f7"
+    "view": {"stroke": null},
+    "font": "Outfit, sans-serif",
+    "background": "#ffffff"
   }
 }
