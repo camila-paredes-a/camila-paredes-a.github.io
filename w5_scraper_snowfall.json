@@ -5,13 +5,13 @@
     "subtitle": [
       "Weekly snowfall in centimeters across 10 ski resorts (Dec-Apr) | Source: snow-forecast.com"
     ],
-    "fontSize": 22,
-    "font": "Proxima, sans-serif",
+    "fontSize": 18,
+    "font": "Outfit, sans-serif",
     "fontWeight": "bold",
     "color": "#1a2a3a"
   },
-  "width": 700,
-  "height": 400,
+  "width": 500,
+  "height": 350,
   "padding": 20,
   "background": "#ffffff",
   "data": {
@@ -32,11 +32,11 @@
       "sort": ["December", "January", "February", "March", "April"],
       "title": "Month",
       "axis": {
-        "labelFontSize": 13,
+        "labelFontSize": 11,
         "labelColor": "#2d3748",
         "labelFont": "Proxima, sans-serif",
         "labelAngle": 0,
-        "titleFontSize": 12,
+        "titleFontSize": 11,
         "titleColor": "#2d3748",
         "titleFont": "Proxima, sans-serif",
         "domain": false,
@@ -48,12 +48,12 @@
       "type": "nominal",
       "title": "Ski Resort",
       "axis": {
-        "labelFontSize": 13,
+        "labelFontSize": 11,
         "labelColor": "#2d3748",
-        "labelFont": "Proxima, sans-serif",
-        "titleFontSize": 12,
+        "labelFont": "Outfit, sans-serif",
+        "titleFontSize": 11,
         "titleColor": "#2d3748",
-        "titleFont": "Proxima, sans-serif",
+        "titleFont": "Outfit, sans-serif",
         "domain": false,
         "ticks": false
       }
