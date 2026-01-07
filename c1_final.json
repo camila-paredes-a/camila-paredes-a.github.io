@@ -13,8 +13,8 @@
     "subtitleFontWeight": 400,
     "subtitleColor": "#646464"
   },
-  "width": 750,
-  "height": 420,
+  "width": 700,
+  "height": 450,
   "data": {
     "url": "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c1_housing_spending.csv"
   },
@@ -120,10 +120,10 @@
       "subtitleColor": "#999999"
     },
     "axis": {
-      "labelFont": "Inter, sans-serif",
+      "labelFont": "Proxima, sans-serif",
       "labelFontSize": 13,
       "labelColor": "#666666",
-      "titleFont": "Inter, sans-serif",
+      "titleFont": "Proxima, sans-serif",
       "titleFontSize": 13,
       "titleFontWeight": 500,
       "titleColor": "#666666",
@@ -139,8 +139,8 @@
     "legend": {"disable": false},
     "view": {
       "stroke": "transparent",
-      "continuousWidth": 750,
-      "continuousHeight": 420
+      "continuousWidth": 700,
+      "continuousHeight": 450
     }
   }
 }
