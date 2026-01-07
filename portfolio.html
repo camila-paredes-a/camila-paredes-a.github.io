@@ -114,15 +114,14 @@
   <!-- Week 6 -->
   <section>
     <div class="chart-description">
-      <h3>CC6 – Week 6</h3>
-      <p>Placeholder description for CC6.</p>
+      <h3>CC6 – Week 6: GDP Growth Dashboard</h3>
+      <p>
+        Building a dashboard using a loop. I used Python to batch-download data from the World Bank API, 
+        and a JavaScript loop to generate these 6 charts automatically.
+      </p>
     </div>
-    <figure id="w6chart1"></figure>
-    <div class="chart-description">
-      <h4>CC6 – Chart 2</h4>
-      <p>Second visualisation for Week 6.</p>
-    </div>
-    <figure id="w6chart2"></figure>
+    
+    <div id="w6-dashboard" class="dashboard-grid"></div>
   </section>
 
   <!-- Week 7 -->
@@ -228,14 +227,32 @@
         .then(() => console.log("CC5 Chart 2 loaded"))
         .catch(console.error);
 
-      // CC6 Charts (placeholder)
-      vegaEmbed('#w6chart1', "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/w6chart1.json")
-        .then(() => console.log("CC6 Chart 1 loaded"))
-        .catch(console.error);
-
-      vegaEmbed('#w6chart2', "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/w6chart2.json")
-        .then(() => console.log("CC6 Chart 2 loaded"))
-        .catch(console.error);
+      // CC6 Charts
+   
+    const cc6_countries = ['USA', 'CHN', 'JPN', 'DEU', 'GBR', 'IND'];
+    const cc6_base_url = "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/";
+    cc6_countries.forEach(country => {
+        const full_path = cc6_base_url + country + "_data.json";
+        const spec = {
+            "$schema": "https://vega.github.net/schema/vega-lite/v5.json",
+            "title": `GDP Growth: ${country}`,
+            "width": "container",
+            "height": 200,
+            "data": { "url": full_path },
+            "mark": "line",
+            "encoding": {
+                "x": { "field": "year", "type": "temporal", "title": "Year" },
+                "y": { "field": "value", "type": "quantitative", "title": "Growth %" },
+                "color": { "value": "steelblue" } // or any color from your theme
+            }
+        };
+      
+        const div = document.createElement('div');
+        div.id = `vis-${country}`;
+        div.className = 'chart-card'; 
+        document.getElementById('w6-dashboard').appendChild(div);
+        vegaEmbed(`#vis-${country}`, spec).catch(console.error);
+    });
 
       // CC7 Charts 
       vegaEmbed('#w7chart1', "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/w7_environmental_permits_wales.json")
