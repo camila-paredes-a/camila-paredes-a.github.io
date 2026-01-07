@@ -55,8 +55,8 @@
         "ticks": false,
         "labelAngle": 0,
         "offset": 0,
-        "labelFont": "Inter, sans-serif",
-        "labelFontSize": 13,
+        "labelFont": "Outfit, sans-serif",
+        "labelFontSize": 12,
         "labelColor": "#666666"
       },
       "sort": "-x"
