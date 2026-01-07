@@ -4,13 +4,91 @@
   <meta charset="UTF-8">
   <title>Camila Paredes | PP434 Project</title>
 
-  <!-- Link your CSS -->
   <link rel="stylesheet" href="style.css">
 
   <!-- Vega libraries -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@6"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+  <style>
+    body {
+      background-color: #ffffff;
+      color: #1a1a1a;
+      font-family: 'Proxima Nova', 'Proxima', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header.top-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      border-bottom: 1px solid #e0e0e0;
+      background-color: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav-left h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    .nav-right nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #1a1a1a;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-right nav a:hover {
+      color: #555555;
+    }
+
+    .page-title {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #1a1a1a;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h3, h4 {
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #333333;
+      line-height: 1.5;
+    }
+
+    .chart-container {
+      max-width: 700px;
+      width: 90%;
+      margin: 40px auto;
+      text-align: center;
+    }
+
+    .chart-container figure {
+      margin: 0;
+    }
+
+    .chart-description p {
+      margin-top: 5px;
+      font-size: 0.95rem;
+      color: #555555;
+    }
+  </style>
 </head>
 
 <body>
@@ -20,9 +98,7 @@
     <div class="nav-left">
       <h1 class="site-name">Camila Paredes</h1>
     </div>
-    <div class="nav-center">
-      <h2 class="page-title">PP434</h2>
-    </div>
+    <div class="page-title">PP434 Project</div>
     <div class="nav-right">
       <nav>
         <a href="index.html">About</a>
@@ -43,91 +119,85 @@
     </p>
   </section>
 
-  <!-- Chart Section: Housing Costs -->
+  <!-- Charts -->
   <section>
-    <div class="chart-description">
-      <h3>C1: Additional Weekly Housing Costs</h3>
-      <p>Difference in weekly housing expenditure between households with and without children</p>
+    <div class="chart-container">
+      <div class="chart-description">
+        <h3>C1: Additional Weekly Housing Costs</h3>
+        <p>Difference in weekly housing expenditure between households with and without children</p>
+      </div>
+      <figure id="c1chart"></figure>
     </div>
-    <figure id="c1chart"></figure>
 
-    <div class="chart-description">
-      <h3>C2: Housing Affordability Impact</h3>
-      <p>Housing as a share of total household spending, before and after parenthood</p>
+    <div class="chart-container">
+      <div class="chart-description">
+        <h3>C2: Housing Affordability Impact</h3>
+        <p>Housing as a share of total household spending, before and after parenthood</p>
+      </div>
+      <figure id="c2chart"></figure>
     </div>
-    <figure id="c2chart"></figure>
 
-    <div class="chart-description">
-      <h3>C3: Residual Income After Housing</h3>
-      <p>Annual disposable income after housing costs, by region</p>
+    <div class="chart-container">
+      <div class="chart-description">
+        <h3>C3: Residual Income After Housing</h3>
+        <p>Annual disposable income after housing costs, by region</p>
+      </div>
+      <figure id="c3chart"></figure>
     </div>
-    <figure id="c3chart"></figure>
-  </section>
 
-  <!-- Chart Section: Child Benefit -->
-  <section>
-    <div class="chart-description">
-      <h3>C4: Child Benefit Coverage by Region</h3>
-      <p>Families receiving Child Benefit across UK regions (2003–2024)</p>
+    <div class="chart-container">
+      <div class="chart-description">
+        <h3>C4: Child Benefit Coverage by Region</h3>
+        <p>Families receiving Child Benefit across UK regions (2003–2024)</p>
+      </div>
+      <figure id="c4chart"></figure>
     </div>
-    <figure id="c4chart"></figure>
 
-    <div class="chart-description">
-      <h3>C4.1: Non-Claiming Families / Other Breakdown</h3>
-      <p>Families eligible for Child Benefit but not claiming, by region</p>
+    <div class="chart-container">
+      <div class="chart-description">
+        <h3>C4.1: Non-Claiming Families / Other Breakdown</h3>
+        <p>Families eligible for Child Benefit but not claiming, by region</p>
+      </div>
+      <figure id="c4-1chart"></figure>
     </div>
-    <figure id="c4-1chart"></figure>
-  </section>
 
-  <!-- Chart Section: Analytical & Distribution -->
-  <section>
-    <div class="chart-description">
-      <h3>C5: Analytical Chart (Big Data)</h3>
-      <p>Patterns across regions, income, housing costs, and Child Benefit uptake</p>
+    <div class="chart-container">
+      <div class="chart-description">
+        <h3>C5: Analytical Chart (Big Data)</h3>
+        <p>Patterns across regions, income, housing costs, and Child Benefit uptake</p>
+      </div>
+      <figure id="c5chart"></figure>
     </div>
-    <figure id="c5chart"></figure>
 
-    <div class="chart-description">
-      <h3>C6: Family Size Distribution</h3>
-      <p>Histogram of family sizes, comparing uptake vs non-uptake of Child Benefit</p>
+    <div class="chart-container">
+      <div class="chart-description">
+        <h3>C6: Family Size Distribution</h3>
+        <p>Histogram of family sizes, comparing uptake vs non-uptake of Child Benefit</p>
+      </div>
+      <figure id="c6chart"></figure>
     </div>
-    <figure id="c6chart"></figure>
   </section>
 
   <!-- Embed Charts -->
   <script>
-    // Housing charts
-    vegaEmbed('#c1chart', "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c1_final.json")
-      .then(() => console.log("C1 loaded"))
-      .catch(console.error);
+    const charts = [
+      {id: '#c1chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c1_final.json'},
+      {id: '#c2chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c2.json'},
+      {id: '#c3chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c3.json'},
+      {id: '#c4chart', url: ''},
+      {id: '#c4-1chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c4.1.json'},
+      {id: '#c5chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c5_analytical.json'},
+      {id: '#c6chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c6_histogram.json'}
+    ];
 
-    vegaEmbed('#c2chart', "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c2.json")
-      .then(() => console.log("C2 loaded"))
-      .catch(console.error);
-
-    vegaEmbed('#c3chart', "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c3.json")
-      .then(() => console.log("C3 loaded"))
-      .catch(console.error);
-
-    // Child Benefit charts
-    vegaEmbed('#c4chart', "")
-      .then(() => console.log("C4 loaded"))
-      .catch(console.error);
-
-    vegaEmbed('#c4-1chart', "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c4.1.json")
-      .then(() => console.log("C4.1 loaded"))
-      .catch(console.error);
-
-    // Analytical & Distribution charts
-    vegaEmbed('#c5chart', "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c5_analytical.json")
-      .then(() => console.log("C5 loaded"))
-      .catch(console.error);
-
-    vegaEmbed('#c6chart', "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c6_histogram.json")
-      .then(() => console.log("C6 loaded"))
-      .catch(console.error);
+    charts.forEach(c => {
+      if(c.url) {
+        vegaEmbed(c.id, c.url, {renderer: 'svg', width: 650, height: 350, autosize: {type: "fit", contains: "padding"}})
+        .then(() => console.log(`${c.id} loaded`))
+        .catch(console.error);
+      }
+    });
   </script>
 
 </body>
 </html>
-
