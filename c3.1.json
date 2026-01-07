@@ -3,18 +3,18 @@
   "title": {
     "text": "Regional income differences across the UK",
     "subtitle": [
-      "Gross Disposable Household Income (GDHI) per head (2013–2023)",
+      "Gross Disposable Household Income (GDHI) per head (2013–2022)",
       "Source: ONS, Regional GDHI"
     ],
-    "fontSize": 24,
+    "fontSize": 18,
     "fontWeight": 700,
     "color": "#4b4a4a",
-    "subtitleFontSize": 15,
+    "subtitleFontSize": 13,
     "subtitleFontWeight": 400,
     "subtitleColor": "#646464"
   },
-  "width": 700,
-  "height": 550,
+  "width": 500,
+  "height": 350,
   "projection": {"type": "mercator", "reflectY": false},
   "data": {
     "url": "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c3_1_itl2_gdhi_long.csv"
@@ -65,7 +65,7 @@
       "scale": {"scheme": "blueorange", "domain": [10000, 65000]},
       "title": "GDHI per Head (£)",
       "legend": {
-        "titleFontSize": 13,
+        "titleFontSize": 12,
         "titleFontWeight": 700,
         "labelFontSize": 12,
         "titleColor": "#666666",
@@ -87,24 +87,24 @@
   },
   "config": {
     "background": "#ffffff",
-    "font": "Inter, sans-serif",
+    "font": "Outfit, sans-serif",
     "title": {
-      "font": "Inter, sans-serif",
-      "fontSize": 24,
+      "font": "Outfit, sans-serif",
+      "fontSize": 18,
       "fontWeight": 700,
       "color": "#4b4a4a",
       "anchor": "start",
       "offset": 25,
-      "subtitleFontSize": 15,
+      "subtitleFontSize": 13,
       "subtitleFontWeight": 400,
       "subtitleColor": "#646464"
     },
     "axis": {
-      "labelFont": "Inter, sans-serif",
-      "labelFontSize": 13,
+      "labelFont": "Outfit, sans-serif",
+      "labelFontSize": 12,
       "labelColor": "#666666",
-      "titleFont": "Inter, sans-serif",
-      "titleFontSize": 13,
+      "titleFont": "Outfit, sans-serif",
+      "titleFontSize": 12,
       "titleFontWeight": 700,
       "titleColor": "#666666",
       "domainColor": "#d0d0d0",
@@ -117,13 +117,13 @@
       "offset": 5
     },
     "legend": {
-      "labelFont": "Inter, sans-serif",
-      "titleFont": "Inter, sans-serif"
+      "labelFont": "Outfit, sans-serif",
+      "titleFont": "Outfit, sans-serif"
     },
     "view": {
       "stroke": "transparent",
-      "continuousWidth": 700,
-      "continuousHeight": 550
+      "continuousWidth": 500,
+      "continuousHeight": 350
     }
   }
 }
