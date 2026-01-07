@@ -1,0 +1,183 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "China's poverty rate has declined while the US trend has stagnated",
+    "subtitle": "Percent of the population living on $3 per day",
+    "fontSize": 20,
+    "font": "Georgia, serif",
+    "anchor": "start"
+  },
+  "background": "#fff5f3",
+  "config": {
+    "view": {"stroke": null, "fill": "#fff5f3"},
+    "font": "Georgia, serif"
+  },
+  "vconcat": [
+    {
+      "hconcat": [
+        {
+          "title": {"text": "China", "fontSize": 15, "anchor": "start"},
+          "width": 350,
+          "height": 300,
+          "data": {
+            "values": [
+              {"Year": 1982, "Rate": 80},
+              {"Year": 1984, "Rate": 76.8},
+              {"Year": 1986, "Rate": 62},
+              {"Year": 1987, "Rate": 58.4},
+              {"Year": 1993, "Rate": 48.2},
+              {"Year": 1996, "Rate": 33.1},
+              {"Year": 1999, "Rate": 26.2},
+              {"Year": 2002, "Rate": 20.6},
+              {"Year": 2005, "Rate": 15.7},
+              {"Year": 2008, "Rate": 13.2},
+              {"Year": 2011, "Rate": 6.2},
+              {"Year": 2013, "Rate": 3.5},
+              {"Year": 2015, "Rate": 2.2},
+              {"Year": 2017, "Rate": 1.7},
+              {"Year": 2019, "Rate": 0.8},
+              {"Year": 2020, "Rate": 0}
+            ]
+          },
+          "layer": [
+            {
+              "mark": {
+                "type": "area",
+                "line": {"color": "#d9534f", "size": 3},
+                "color": "#d9534f",
+                "opacity": 0.25,
+                "interpolate": "monotone"
+              },
+              "encoding": {
+                "x": {
+                  "field": "Year",
+                  "type": "ordinal",
+                  "title": null,
+                  "axis": {
+                    "grid": false,
+                    "labelAngle": 0,
+                    "values": [1982, 1999],
+                    "labelExpr": "datum.value == 1982 ? '1 am\\nJan 1' : datum.value == 1999 ? '12 am' : ''"
+                  }
+                },
+                "y": {
+                  "field": "Rate",
+                  "type": "quantitative",
+                  "title": null,
+                  "scale": {"domain": [0, 80]},
+                  "axis": {
+                    "labelFontSize": 11,
+                    "format": ".1f",
+                    "values": [0, 20, 40, 60, 80],
+                    "grid": true,
+                    "gridColor": "#e5e5e5"
+                  }
+                },
+                "tooltip": [
+                  {
+                    "field": "Year",
+                    "type": "temporal",
+                    "format": "%Y",
+                    "title": "Year"
+                  },
+                  {
+                    "field": "Rate",
+                    "type": "quantitative",
+                    "format": ".1f",
+                    "title": "Poverty Rate (%)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": {"text": "United States", "fontSize": 15, "anchor": "start"},
+          "width": 350,
+          "height": 300,
+          "data": {
+            "values": [
+              {"Year": 1989, "Rate": 0.5},
+              {"Year": 1991, "Rate": 0.5},
+              {"Year": 1993, "Rate": 0.8},
+              {"Year": 1995, "Rate": 0.8},
+              {"Year": 1998, "Rate": 1},
+              {"Year": 2000, "Rate": 1},
+              {"Year": 2003, "Rate": 1.2},
+              {"Year": 2005, "Rate": 1},
+              {"Year": 2007, "Rate": 1.2},
+              {"Year": 2009, "Rate": 1.2},
+              {"Year": 2011, "Rate": 1},
+              {"Year": 2013, "Rate": 0.5},
+              {"Year": 2015, "Rate": 1.25},
+              {"Year": 2016, "Rate": 1.25}
+            ]
+          },
+          "mark": {
+            "type": "area",
+            "line": {"color": "#c9a876", "size": 3},
+            "color": "#c9a876",
+            "opacity": 0.25,
+            "interpolate": "monotone"
+          },
+          "encoding": {
+            "x": {
+              "field": "Year",
+              "type": "ordinal",
+              "title": null,
+              "axis": {
+                "grid": false,
+                "labelAngle": 0,
+                "values": [1989, 2000],
+                "labelExpr": "datum.value == 1989 ? '1 am\\nJan 1' : datum.value == 2000 ? '12 am' : ''"
+              }
+            },
+            "y": {
+              "field": "Rate",
+              "type": "quantitative",
+              "title": null,
+              "scale": {"domain": [0, 1.2]},
+              "axis": {
+                "labelFontSize": 11,
+                "format": ".1f",
+                "values": [0, 0.5, 1],
+                "grid": true,
+                "gridColor": "#e5e5e5"
+              }
+            },
+            "tooltip": [
+              {
+                "field": "Year",
+                "type": "temporal",
+                "format": "%Y",
+                "title": "Year"
+              },
+              {
+                "field": "Rate",
+                "type": "quantitative",
+                "format": ".2f",
+                "title": "Poverty Rate (%)"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "width": 450,
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "top",
+        "fontSize": 11,
+        "color": "#999"
+      },
+      "data": {"values": [{"x": 0, "y": 0}]},
+      "encoding": {
+        "text": {
+          "value": "Guardian graphic. Source: The World Bank. Notes: The $3 poverty threshold is in 2021 dollars."
+        }
+      }
+    }
+  ]
+}

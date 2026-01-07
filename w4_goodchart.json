@@ -1,0 +1,109 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "Comparing poverty rates in China and the US",
+    "subtitle": "Percent of population living on less than $3 per day (2021 USD)",
+    "fontSize": 18,
+    "font": "Georgia, serif",
+    "anchor": "start",
+    "color": "#1a1a1a"
+  },
+  "width": 700,
+  "height": 450,
+  "background": "#faf9f7",
+  "data": {
+    "values": [
+      {"Year": 1990, "Country": "China", "Rate": 83},
+      {"Year": 1993, "Country": "China", "Rate": 76.8},
+      {"Year": 1996, "Country": "China", "Rate": 62},
+      {"Year": 1999, "Country": "China", "Rate": 58.4},
+      {"Year": 2002, "Country": "China", "Rate": 48.1},
+      {"Year": 2005, "Country": "China", "Rate": 33.1},
+      {"Year": 2008, "Country": "China", "Rate": 26.2},
+      {"Year": 2010, "Country": "China", "Rate": 20.6},
+      {"Year": 2011, "Country": "China", "Rate": 15.7},
+      {"Year": 2012, "Country": "China", "Rate": 13.2},
+      {"Year": 2013, "Country": "China", "Rate": 6.2},
+      {"Year": 2014, "Country": "China", "Rate": 4.7},
+      {"Year": 2015, "Country": "China", "Rate": 3},
+      {"Year": 2016, "Country": "China", "Rate": 2.2},
+      {"Year": 2017, "Country": "China", "Rate": 1.7},
+      {"Year": 2018, "Country": "China", "Rate": 0.8},
+      {"Year": 2019, "Country": "China", "Rate": 0},
+      {"Year": 2020, "Country": "China", "Rate": 0},
+      {"Year": 2021, "Country": "China", "Rate": 0},
+      {"Year": 2022, "Country": "China", "Rate": 0},
+      {"Year": 1990, "Country": "United States", "Rate": 0.5},
+      {"Year": 1993, "Country": "United States", "Rate": 0.7},
+      {"Year": 1996, "Country": "United States", "Rate": 0.7},
+      {"Year": 1999, "Country": "United States", "Rate": 0.7},
+      {"Year": 2001, "Country": "United States", "Rate": 1},
+      {"Year": 2005, "Country": "United States", "Rate": 1},
+      {"Year": 2008, "Country": "United States", "Rate": 1},
+      {"Year": 2010, "Country": "United States", "Rate": 1.2},
+      {"Year": 2011, "Country": "United States", "Rate": 1},
+      {"Year": 2012, "Country": "United States", "Rate": 1},
+      {"Year": 2013, "Country": "United States", "Rate": 1},
+      {"Year": 2014, "Country": "United States", "Rate": 1.2},
+      {"Year": 2015, "Country": "United States", "Rate": 1.2},
+      {"Year": 2016, "Country": "United States", "Rate": 1.2},
+      {"Year": 2017, "Country": "United States", "Rate": 1.2},
+      {"Year": 2018, "Country": "United States", "Rate": 1},
+      {"Year": 2019, "Country": "United States", "Rate": 1},
+      {"Year": 2020, "Country": "United States", "Rate": 0.5},
+      {"Year": 2021, "Country": "United States", "Rate": 0.5},
+      {"Year": 2022, "Country": "United States", "Rate": 1.2}
+    ]
+  },
+  "mark": {
+    "type": "line",
+    "size": 3,
+    "point": {"opacity": 1, "filled": true, "size": 50}
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "quantitative",
+      "title": null,
+      "scale": {"domain": [1990, 2022]},
+      "axis": {
+        "format": "d",
+        "tickCount": 8,
+        "grid": false,
+        "labelFontSize": 11,
+        "labelColor": "#666"
+      }
+    },
+    "y": {
+      "field": "Rate",
+      "type": "quantitative",
+      "title": "Population %",
+      "scale": {"domain": [0, 90]},
+      "axis": {
+        "format": "d",
+        "grid": true,
+        "gridColor": "#ddd",
+        "gridOpacity": 0.5,
+        "labelFontSize": 11,
+        "labelColor": "#666",
+        "ticks": false
+      }
+    },
+    "color": {
+      "field": "Country",
+      "type": "nominal",
+      "scale": {"range": ["#911943", "#1e5be8"]},
+      "legend": {"title": null, "orient": "top-right", "labelFontSize": 12}
+    },
+    "tooltip": [
+      {"field": "Country"},
+      {"field": "Year", "format": "d"},
+      {"field": "Rate", "title": "Poverty %", "format": ".1f"}
+    ]
+  },
+  "config": {
+    "view": {"stroke": null, "fill": "#faf9f7"},
+    "font": "Georgia, serif",
+    "background": "#faf9f7"
+  }
+}
