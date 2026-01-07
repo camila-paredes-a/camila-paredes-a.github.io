@@ -11,7 +11,7 @@
     "color": "#1a2a3a"
   },
   "width": 500,
-  "height": 350,
+  "height": 400,
   "padding": 20,
   "background": "#ffffff",
   "data": {
@@ -32,13 +32,13 @@
       "sort": ["December", "January", "February", "March", "April"],
       "title": "Month",
       "axis": {
-        "labelFontSize": 11,
+        "labelFontSize": 12,
         "labelColor": "#2d3748",
-        "labelFont": "Proxima, sans-serif",
+        "labelFont": "Outfit, sans-serif",
         "labelAngle": 0,
-        "titleFontSize": 11,
+        "titleFontSize": 12,
         "titleColor": "#2d3748",
-        "titleFont": "Proxima, sans-serif",
+        "titleFont": "Outfit, sans-serif",
         "domain": false,
         "ticks": false
       }
@@ -48,10 +48,10 @@
       "type": "nominal",
       "title": "Ski Resort",
       "axis": {
-        "labelFontSize": 11,
+        "labelFontSize": 12,
         "labelColor": "#2d3748",
         "labelFont": "Outfit, sans-serif",
-        "titleFontSize": 11,
+        "titleFontSize": 12,
         "titleColor": "#2d3748",
         "titleFont": "Outfit, sans-serif",
         "domain": false,
