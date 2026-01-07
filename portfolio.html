@@ -117,13 +117,25 @@
   <!-- Week 5 -->
   <section>
     <div class="chart-description">
-      <h3>CC5 – Week 5</h3>
-      <p>Placeholder description for CC5.</p>
+      <h3>CC5. API and Scraper</h3>
+      <p>I used the World Bank API to track remittance inflows to Mexico, India, and the Philippines (1974-2024). This chart highlights the massive growth in money flowing to the Global South over the last 50 years.</p>
     </div>
     <figure id="w5chart1"></figure>
+     <div class="api-description">
+        <h4>API Description</h4>
+        <p><strong>Base URL:</strong> <code>https://api.worldbank.org/v2/country/</code></p>
+        <p><strong>Parameters:</strong> To call this data, I appended the country codes (MX;IN;PH), the specific indicator ID for personal remittances, and the format parameter.</p>
+        <p><strong>URL:</strong> <br>
+           <code>https://api.worldbank.org/v2/country/MX;IN;PH/indicator/BX.TRF.PWKR.CD.DT?format=json&per_page=500</code>
+        </p>
+    </div>
+
     <div class="chart-description">
-      <h4>CC5 – Chart 2</h4>
-      <p>Second visualisation for Week 5.</p>
+      <h3>CC5.Scraper: Alpine Snowfall</h3>
+      <p>Driven by a personal interest in skiing, I scraped weekly historical snowfall data (Dec–April) for French Alps resorts. To address incomplete datasets, I selected a diverse mix of popular and budget locations to uncover reliable seasonal patterns.</p>
+        <a href="https://colab.research.google.com/drive/1Oah89zTqkodgEQ4QV-woGNdaH9Tn1Rj5?usp=sharing" target="_blank" style="font-weight: bold; color: #005f73;">
+            View Python Scraper Notebook
+        </a>
     </div>
     <figure id="w5chart2"></figure>
   </section>
