@@ -1,0 +1,99 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "Snowfall trends in the French Alps",
+    "subtitle": [
+      "Weekly snowfall in centimeters across 10 ski resorts (Dec-Apr) | Source: snow-forecast.com"
+    ],
+    "fontSize": 22,
+    "font": "Proxima, sans-serif",
+    "fontWeight": "bold",
+    "color": "#1a2a3a"
+  },
+  "width": 700,
+  "height": 400,
+  "padding": 20,
+  "background": "#ffffff",
+  "data": {
+    "url": "https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/ski_resorts_history_beautiful_soup.csv"
+  },
+  "transform": [
+    {"filter": "datum.Resort != 'Zermatt' && datum.Resort != 'Verbier'"},
+    {
+      "calculate": "parseFloat(split(datum['Snow amount (week)'], ' ')[0])",
+      "as": "Snow_cm"
+    }
+  ],
+  "mark": {"type": "rect", "stroke": null, "opacity": 1},
+  "encoding": {
+    "x": {
+      "field": "Month",
+      "type": "ordinal",
+      "sort": ["December", "January", "February", "March", "April"],
+      "title": "Month",
+      "axis": {
+        "labelFontSize": 13,
+        "labelColor": "#2d3748",
+        "labelFont": "Proxima, sans-serif",
+        "labelAngle": 0,
+        "titleFontSize": 12,
+        "titleColor": "#2d3748",
+        "titleFont": "Proxima, sans-serif",
+        "domain": false,
+        "ticks": false
+      }
+    },
+    "y": {
+      "field": "Resort",
+      "type": "nominal",
+      "title": "Ski Resort",
+      "axis": {
+        "labelFontSize": 13,
+        "labelColor": "#2d3748",
+        "labelFont": "Proxima, sans-serif",
+        "titleFontSize": 12,
+        "titleColor": "#2d3748",
+        "titleFont": "Proxima, sans-serif",
+        "domain": false,
+        "ticks": false
+      }
+    },
+    "color": {
+      "field": "Snow_cm",
+      "type": "quantitative",
+      "scale": {
+        "type": "linear",
+        "domain": [0, 50],
+        "range": ["#CCDBDC", "#80CED7", "#003249"]
+      },
+      "title": "Weekly snowfall (cm)",
+      "legend": {
+        "orient": "right",
+        "direction": "vertical",
+        "titleFontSize": 12,
+        "labelFontSize": 13,
+        "titleColor": "#2d3748",
+        "labelColor": "#2d3748",
+        "fillColor": "#ffffff",
+        "padding": 20,
+        "cornerRadius": 0
+      }
+    },
+    "tooltip": [
+      {"field": "Resort", "type": "nominal", "title": "Resort"},
+      {"field": "Month", "type": "nominal", "title": "Month"},
+      {
+        "field": "Snow_cm",
+        "type": "quantitative",
+        "title": "Weekly Snowfall (cm)",
+        "format": ".1f"
+      },
+      {"field": "Snow days (week)", "type": "nominal", "title": "Snow Days"}
+    ]
+  },
+  "config": {
+    "font": "Proxima, sans-serif",
+    "view": {"stroke": null, "fill": "#ffffff"},
+    "axis": {"grid": false, "domain": false}
+  }
+}

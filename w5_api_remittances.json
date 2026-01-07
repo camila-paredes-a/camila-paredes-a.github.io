@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "Global South Remittance Flows (1974-2024)",
+    "subtitle": [
+      "Personal remittances received in India, Mexico, and Philippines | Source: World Bank API"
+    ],
+    "fontSize": 22,
+    "font": "Proxima, sans-serif",
+    "fontWeight": "bold",
+    "color": "#1a2a3a"
+  },
+  "width": 700,
+  "height": 450,
+  "padding": 20,
+  "background": "#ffffff",
+  "data": {
+    "url": "https://api.worldbank.org/v2/country/MX;IN;PH/indicator/BX.TRF.PWKR.CD.DT?format=json&per_page=500",
+    "format": {"type": "json", "property": "1"}
+  },
+  "transform": [
+    {"filter": "datum.value != null"},
+    {"filter": "toNumber(datum.date) >= 1970"},
+    {"calculate": "datum.value / 1e9", "as": "value_billions"}
+  ],
+  "mark": {
+    "type": "line",
+    "size": 3,
+    "point": {"filled": true, "size": 25},
+    "opacity": 0.75
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {"labelAngle": 0, "tickCount": 10}
+    },
+    "y": {
+      "field": "value_billions",
+      "type": "quantitative",
+      "title": "Remittances (Billions USD)",
+      "axis": {"format": "$,.0f"}
+    },
+    "color": {
+      "field": "country.value",
+      "type": "nominal",
+      "title": "Country",
+      "scale": {
+        "domain": ["Mexico", "India", "Philippines"],
+        "range": ["#ec4899", "#06b6d4", "#84cc16"]
+      }
+    },
+    "tooltip": [
+      {"field": "country.value", "type": "nominal", "title": "Country"},
+      {"field": "date", "type": "temporal", "title": "Year", "format": "%Y"},
+      {
+        "field": "value_billions",
+        "type": "quantitative",
+        "title": "Remittances",
+        "format": "$.2f"
+      }
+    ]
+  },
+  "config": {
+    "font": "Proxima, sans-serif",
+    "title": {"fontSize": 22, "anchor": "start", "offset": 15},
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 11.5,
+      "titleColor": "#4a5a6a",
+      "grid": true,
+      "gridOpacity": 0.45
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "orient": "right",
+      "padding": 15,
+      "fillColor": "#ffffff",
+      "strokeColor": "#dee4e9",
+      "cornerRadius": 8
+    },
+    "background": "#ffffff"
+  }
+}
