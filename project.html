@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Camila Paredes | PP434 Project</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,7 +11,6 @@
 
   <link rel="stylesheet" href="style.css">
 
-  <!-- Vega libraries -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@6"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
@@ -18,7 +18,6 @@
 
 <body>
 
-  <!-- Top navigation bar -->
   <header class="top-nav">
     <div class="nav-left">
       <h1 class="site-name">Camila Paredes</h1>
@@ -32,114 +31,174 @@
     </div>
   </header>
 
-  <!-- Page Title -->
-  <h2 class="page-title">PP434: New Breadline Project</h2>
+  <main>
+    <!-- Project Title and Justification -->
+    <section>
+      <h2 class="page-title">Understanding the Impact of Income and Benefits on Family Wellbeing in the UK</h2>
+      <div class="chart-description">
+        <p>
+          This project explores how household income, housing costs, and social support programs affect disposable income for families with children.
+          It focuses on lower-middle income families and evaluates how parenthood shapes household budgets across income groups and regions from 2003 to 2024.
+          The analysis aims to identify patterns, highlight policy gaps, and provide insights for policymakers.
+        </p>
+      </div>
+    </section>
 
-  <!-- Project Overview -->
-  <section>
-    <h3>Project Overview</h3>
-    <p>
-      This project investigates the financial pressures faced by households with children in the UK. 
-      We focus on housing costs, residual income, and social support programs like Child Benefit.
-      The goal is to understand how parenthood affects household budgets across income groups and regions from 2003 to 2024.
-    </p>
-    <p>
-      The project uses weekly coding challenges (CC1–CC10) to build visualisations that reveal patterns, inequalities, and policy-relevant insights. 
-      Each week focuses on a different aspect, from housing affordability to family size distribution and benefit uptake.
-    </p>
-  </section>
+    <!-- CC1: Housing Costs -->
+    <section>
+      <div class="chart-description">
+        <h3>CC1. Housing Costs</h3>
+        <p>
+          We examine additional weekly housing costs incurred by households after having children. 
+          Chart 1 shows the difference between households with and without children, highlighting the financial impact of parenthood.
+        </p>
+      </div>
+      <figure id="c1chart"></figure>
+    </section>
 
-  <!-- Week 1: Housing Costs -->
-  <section>
-    <h3>CC1 & CC2: Housing Costs</h3>
-    <p>
-      We begin by examining additional weekly housing costs incurred by households after having children. 
-      Chart 1 shows the difference between households with and without children, highlighting the financial impact of parenthood.
-    </p>
-    <figure id="c1chart"></figure>
-    <p>
-      Chart 2 explores housing affordability, showing housing as a share of total household spending before and after parenthood. 
-      The data reveals how housing pressures can disproportionately affect low-income households.
-    </p>
-    <figure id="c2chart"></figure>
-  </section>
+    <!-- CC2: Housing Affordability -->
+    <section>
+      <div class="chart-description">
+        <h3>CC2. Housing Affordability</h3>
+        <p>
+          This chart explores housing as a share of total household spending before and after parenthood. 
+          The data reveals how housing pressures disproportionately affect low-income households.
+        </p>
+      </div>
+      <figure id="c2chart"></figure>
+    </section>
 
-  <!-- Week 2: Residual Income -->
-  <section>
-    <h3>CC3: Residual Income After Housing</h3>
-    <p>
-      After accounting for housing costs, we assess residual income by region. 
-      Chart 3 shows how disposable income varies across different parts of the UK and income quintiles, helping identify regions most financially stretched.
-    </p>
-    <figure id="c3chart"></figure>
-  </section>
+    <!-- CC3: Residual Income by Region -->
+    <section>
+      <div class="chart-description">
+        <h3>CC3. Residual Income by Region</h3>
+        <p>
+          After accounting for housing costs, residual income varies across regions and income quintiles. 
+          Chart 3 identifies regions where families are most financially stretched.
+        </p>
+      </div>
+      <figure id="c3chart"></figure>
+    </section>
 
-  <!-- Week 3: Child Benefit Coverage -->
-  <section>
-    <h3>CC4 & CC5: Child Benefit Uptake</h3>
-    <p>
-      Child Benefit is a key support for families. Chart 4 illustrates the percentage of families receiving the benefit across regions. 
-      Chart 4.1 focuses on families eligible but not claiming, providing insights into gaps in policy coverage and awareness.
-    </p>
-    <figure id="c4chart"></figure>
-    <figure id="c4-1chart"></figure>
-  </section>
+    <!-- CC4: Residual Income After Housing (Fixed) -->
+    <section>
+      <div class="chart-description">
+        <h3>CC4. Residual Income After Housing</h3>
+        <p>
+          This chart illustrates that higher gross income does not always translate into higher disposable income for lower-middle income families (£300–£400/week). 
+          Housing costs and tapered benefits flatten net income growth. The red band highlights this income range, showing families with minimal net gain despite higher earnings.
+        </p>
+      </div>
+      <figure id="c4chart"></figure>
+    </section>
 
-  <!-- Week 4: Analytical Patterns -->
-  <section>
-    <h3>CC6: Analytical Patterns Across Regions and Income</h3>
-    <p>
-      Chart 5 visualises patterns across regions, income levels, housing costs, and Child Benefit uptake. 
-      This combined analysis helps identify correlations and policy-relevant trends.
-    </p>
-    <figure id="c5chart"></figure>
-  </section>
+    <!-- CC5: Policy Gaps & Non-Claimants -->
+    <section>
+      <div class="chart-description">
+        <h3>CC5. Policy Gaps & Non-Claimants</h3>
+        <p>
+          Chart 4.1 focuses on families eligible but not claiming benefits, providing insights into gaps in policy coverage and awareness.
+        </p>
+      </div>
+      <figure id="c4-1chart"></figure>
+    </section>
 
-  <!-- Week 5: Family Size Distribution -->
-  <section>
-    <h3>CC7: Family Size Distribution</h3>
-    <p>
-      Chart 6 compares family size distribution for families claiming and not claiming Child Benefit. 
-      This helps us understand whether larger families are more likely to access social support.
-    </p>
-    <figure id="c6chart"></figure>
-  </section>
+    <!-- CC6: Analytical Patterns -->
+    <section>
+      <div class="chart-description">
+        <h3>CC6. Analytical Patterns</h3>
+        <p>
+          Chart 5 visualises patterns across regions, income levels, housing costs, and Child Benefit uptake. 
+          This combined analysis helps identify correlations and policy-relevant trends.
+        </p>
+      </div>
+      <figure id="c5chart"></figure>
+    </section>
 
-  <!-- Week 6-10: Placeholders -->
-  <section>
-    <h3>CC8–CC10: Additional Analyses</h3>
-    <p>
-      Future coding challenges explore complementary angles such as housing stress over time, regional disparities, and advanced visual analyses. 
-      Charts 7–10 will extend the project to include these insights.
-    </p>
-    <figure id="c7chart"></figure>
-    <figure id="c8chart"></figure>
-    <figure id="c9chart"></figure>
-    <figure id="c10chart"></figure>
-  </section>
+    <!-- CC7: Family Size Distribution -->
+    <section>
+      <div class="chart-description">
+        <h3>CC7. Family Size Distribution</h3>
+        <p>
+          Chart 6 compares family size distribution for families claiming and not claiming Child Benefit. 
+          This analysis highlights whether larger families are more likely to access social support.
+        </p>
+      </div>
+      <figure id="c6chart"></figure>
+    </section>
 
-  <!-- Embed Charts -->
+    <!-- CC8: Big Data Analysis -->
+    <section>
+      <div class="chart-description">
+        <h3>CC8. Big Data Analysis</h3>
+        <p>
+          Future coding challenges will explore housing stress over time using larger datasets and additional income and benefits data.
+        </p>
+      </div>
+      <figure id="c7chart"></figure>
+    </section>
+
+    <!-- CC9: Interactive Visualisations -->
+    <section>
+      <div class="chart-description">
+        <h3>CC9. Interactive Visualisations</h3>
+        <p>
+          Interactive elements allow users to explore regional disparities and policy impacts in depth.
+        </p>
+      </div>
+      <figure id="c8chart"></figure>
+    </section>
+
+    <!-- CC10: Advanced Analysis & ML -->
+    <section>
+      <div class="chart-description">
+        <h3>CC10. Advanced Analysis & ML</h3>
+        <p>
+          Advanced visual analyses and machine learning techniques extend the project to predictive insights, exploring income, benefits, and residual income dynamics.
+        </p>
+      </div>
+      <figure id="c9chart"></figure>
+      <figure id="c10chart"></figure>
+    </section>
+
+    <!-- Conclusion -->
+    <section>
+      <div class="chart-description">
+        <h3>Conclusion</h3>
+        <p>
+          The analysis shows that for lower-middle income families, higher gross income does not always lead to higher disposable income due to housing costs and benefit tapering. 
+          Policy levers strongly shape household wellbeing, highlighting the need for targeted interventions to support financially stretched families.
+        </p>
+      </div>
+    </section>
+  </main>
+
   <script>
+    // Chart URLs
     const charts = [
       {id: '#c1chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c1_final.json'},
       {id: '#c2chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c2.json'},
       {id: '#c3chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c3.json'},
-      {id: '#c4chart', url: ''},
+      // CC4: embedded as fixed Vega-Lite object
+      {id: '#c4chart', url: 'fixed'}, 
       {id: '#c4-1chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c4.1.json'},
       {id: '#c5chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c5_analytical.json'},
-      {id: '#c6chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c6_histogram.json'}
+      {id: '#c6chart', url: 'https://raw.githubusercontent.com/camila-paredes-a/camila-paredes-a.github.io/refs/heads/main/c6_histogram.json'},
+      {id: '#c7chart', url: ''},
+      {id: '#c8chart', url: ''},
+      {id: '#c9chart', url: ''},
+      {id: '#c10chart', url: ''}
     ];
 
     charts.forEach(c => {
-      if(c.url) {
+      if(c.url && c.url !== 'fixed') {
         vegaEmbed(c.id, c.url, {renderer: 'svg', width: 650, height: 350, autosize: {type: "fit", contains: "padding"}})
         .then(() => console.log(`${c.id} loaded`))
         .catch(console.error);
       }
     });
-  
+
   </script>
-  
 
 </body>
 </html>
